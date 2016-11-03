@@ -1,0 +1,3 @@
+
+* uniloc: Universal Local
+** this is a universal nix config 
