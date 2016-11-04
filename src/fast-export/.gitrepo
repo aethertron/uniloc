@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git://repo.or.cz/fast-export.git
+	branch = master
+	commit = 6cf9397bd6aadf659efb5104af4d3f37b0753d73
+	parent = 50933814f10931ac3f0be6bb36f45f8dd49fbbfc
+	cmdver = 0.3.0
