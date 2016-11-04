@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(buffer-move-behavior (quote move))
- '(comint-prompt-read-only t)
+ '(comint-prompt-read-only nil)
  '(dired-auto-revert-buffer t)
  '(dired-hide-details-hide-information-lines t)
  '(dired-listing-switches "-Alh")
