@@ -60,7 +60,8 @@ def confdir_install(targ_dir, dest_dir, force_overwrite=False, dryrun=False):
         for filen in files:
             targ = join(root, filen)
             rel = relpath(targ, targ_dir)
-            if not rel.startswith('.'):
+            # ignore . files and emacs ~ files
+            if not (rel.startswith('.') or rel.endswith('~')):
                 rel = '.' + rel
                 dest = join(dest_dir, rel)
                 print("{} -> {}".format(targ, dest), end=' ')
