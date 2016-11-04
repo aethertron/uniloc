@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/kafkaBro/.emacs.d.git
+	branch = master
+	commit = 341b70f7d7c5e1bd10a0f477341a4e3742e9406c
+	parent = 4539b9f92d92d31ade69dbde210b0abc0f5cea9f
+	cmdver = 0.3.0
