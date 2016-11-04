@@ -2,6 +2,7 @@
 '''
 written in python 3?
 '''
+from __future__ import print_function
 import argparse
 from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser
 import os
@@ -27,7 +28,8 @@ def confdir_install(targ_dir, dest_dir, force_overwrite=False, dryrun=False):
     dest_dir = join(getcwd(), expanduser(expandvars(dest_dir)))
     # move to dest_dir
     for root, dirs, files in walk(targ_dir, topdown=True):
-        if root != targ_dir and '.git' in dirs:
+        if root != targ_dir and (('.git' in dirs) or
+                                 ('.gitrepo' in files) or ('.confdir_dir' in files)):
             print("repo at {}, making one symlink".format(root))
             targ = root
             rel = '.' + relpath(targ, targ_dir)
