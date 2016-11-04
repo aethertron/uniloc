@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/nispio/emacs.d.git
+	branch = master
+	commit = f580d655993ebbc0d671e278c1e03f3e3cc45b40
+	parent = 655f8c00bbad63f4c0613a0c808233671984cf2a
+	cmdver = 0.3.0

@@ -1,0 +1,7 @@
+elpa/*
+semanticdb/*
+*.eld
+*.cache
+ac-comphist.dat
+ede-projects.el
+srecode-map.el
