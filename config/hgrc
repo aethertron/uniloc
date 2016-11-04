@@ -1,0 +1,14 @@
+[ui]
+username = William Stubler <william.stubler@gmail.com>
+verbose = True
+editor = emacsclient
+ignore = ~/.hgignore
+merge = meld
+
+[extensions]
+# pager =  # don't need pager because of shell in emacs
+progress =
+color =
+hgext.bookmarks =
+purge =
+# hggit = /usr/lib/python3.5/site-packages/hg_git-0.8.5-py3.5.egg/hggit

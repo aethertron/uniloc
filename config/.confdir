@@ -1,0 +1,5 @@
+# file identifies this directory as a "confdir"
+# assorted config may go here, hopefully not
+# make this an ini file? a markdown file? an org file?
+# let's make it INI for now, introduce json if necessary
+# if only JSON had comments, then it'd be perfect

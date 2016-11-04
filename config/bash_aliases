@@ -1,0 +1,4 @@
+# [2016-07-27 Wed 19:50] have decided to move away from using this file
+alias em='emacsclient -n'
+alias ld='ls -d */'
+alias lf='find . -maxdepth 1 -type f  | cut -d / -f 2  | xargs ls --color=auto'

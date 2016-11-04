@@ -1,0 +1,7 @@
+#
+# ~/.bash_profile
+#
+
+# both bash and zsh try to source profile
+[[ -f ~/.profile ]] && . ~/.profile
+[[ -f ~/.bashrc ]] && . ~/.bashrc

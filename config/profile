@@ -1,0 +1,16 @@
+#
+# ~/.profile
+#
+# uniloc's configuration for bash and zsh login shells 
+#   may consider supporting fish in future if it is remotely possible
+
+# add uniloc to path, pythonpath and manpath
+export PATH="~/uniloc/bin:$PATH"
+export PYTHONPATH="~/uniloc/lib/python" # 
+# export MANPATH=":$MANPATH"
+
+# give user opportunity to define their own config
+[[ -f ~/.profile_local ]] && . ~/.profile_local
+
+# xmodmap
+# xmodmap ~/.xmodmaprc

@@ -1,0 +1,4 @@
+this is a master config repo
+* File Conventions
+** Files are generally the same except with a "." prefix.
+** If a file is in a subdirectory, then use __ to separate sub-dir and filename 
