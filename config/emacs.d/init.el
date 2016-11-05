@@ -51,13 +51,18 @@
 ;; ** global key mapping
 ;; *** remove stuff
 (global-unset-key (kbd "C-z")) 		;remove suspend frame
+(global-unset-key (kbd "C-o"))
+(global-unset-key (kbd "C-O"))
 
 (require 'kafkalib/etc)
 (global-set-key (kbd "C-c t") 'rename-buffer)
 (global-set-key (kbd "C-c x") 'kafkalib/launch-shell)
 (global-set-key (kbd "C-c h") 'hl-line-mode)
 (global-set-key (kbd "C-c f") 'find-file-at-point)
+(global-set-key (kbd "C-c w") 'kafkalib/copy-buffer-filename)
 (global-set-key (kbd "<f5>") 'revert-buffer)
+(global-set-key (kbd "C-o") 'kafkalib/open-next-line)
+(global-set-key (kbd "C-O") 'kafkalib/open-prev-line)
 
 (require 'kafkabro/org)
 (require 'kafkabro/emacs-lisp)
