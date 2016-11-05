@@ -5,7 +5,7 @@
 #   may consider supporting fish in future if it is remotely possible
 
 # add uniloc to path, pythonpath and manpath
-export PATH="~/uniloc/bin:$PATH"
+export PATH="~/uniloc/bin:~/local/bin:~/bin:$PATH"
 export PYTHONPATH="~/uniloc/py" # 
 # export MANPATH=":$MANPATH"
 
