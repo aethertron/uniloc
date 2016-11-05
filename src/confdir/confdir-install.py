@@ -89,8 +89,8 @@ def confdir_install(targ_dir, dest_dir, force_overwrite=False, dryrun=False):
 def confdir_install_cli(args):
     # * argparse
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
-    parser.add_argument('targ', nargs='?', default='.')
-    parser.add_argument('dest', nargs='?', default='~')
+    parser.add_argument('targ', nargs='?', default='.', help='target')
+    parser.add_argument('dest', nargs='?', default='~', help='destination')
     parser.add_argument('--dryrun', action='store_true')
     parser.add_argument('-f', '--force', action='store_true')
     args = parser.parse_args(args)
