@@ -126,6 +126,10 @@
 ;; - hg support (monky)
 (use-package monky :ensure t)
 
+;; * line
+(use-package page-break-lines :ensure t)
+(global-page-break-lines-mode)
+
 ;; * dumb-jump
 (use-package dumb-jump :ensure t)
 (dumb-jump-mode 1)
@@ -174,6 +178,12 @@
 
 ;; ** json mode
 (use-package json-mode :ensure t)	; importing this allows flycheck to work with json
+
+;; ** python mode
+(defun wgs85/python-mode-hook ()
+  "Python mode hook."
+  (toggle-truncate-lines 1))
+(add-hook 'python-mode 'wgs85/python-mode-hook)
 
 
 ;; * machine-specific config
