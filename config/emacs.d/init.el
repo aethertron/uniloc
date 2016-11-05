@@ -135,7 +135,10 @@
 ;; discover
 (use-package discover :ensure t)
 
-;;  ** flycheck config
+;; ** semantic mode
+(semantic-mode)
+
+;; ** flycheck config
 (use-package flycheck :ensure t)
 
 ;; * ace-link begin
