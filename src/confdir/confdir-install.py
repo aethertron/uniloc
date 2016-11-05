@@ -3,11 +3,10 @@
 written in python 3?
 '''
 from __future__ import print_function
-import argparse
 from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser
 import os
 from os import walk, symlink, remove, getcwd
-from os.path import (join, getsize, relpath, expanduser, expandvars,
+from os.path import (join, relpath, expanduser, expandvars,
                      samefile, exists, lexists)
 import sys
 import logging
