@@ -51,9 +51,8 @@
 ;; ** global key mapping
 ;; *** remove stuff
 (global-unset-key (kbd "C-z")) 		;remove suspend frame
-(global-unset-key (kbd "C-o"))
-(global-unset-key (kbd "C-O"))
 
+;; *** Bind to commands from kafkalib
 (require 'kafkalib/etc)
 (global-set-key (kbd "C-c t") 'rename-buffer)
 (global-set-key (kbd "C-c x") 'kafkalib/launch-shell)
@@ -61,8 +60,15 @@
 (global-set-key (kbd "C-c f") 'find-file-at-point)
 (global-set-key (kbd "C-c w") 'kafkalib/copy-buffer-filename)
 (global-set-key (kbd "<f5>") 'revert-buffer)
+;; **** Bring in open lines
+(global-unset-key (kbd "C-o"))
+(global-unset-key (kbd "C-O"))
 (global-set-key (kbd "C-o") 'kafkalib/open-next-line)
 (global-set-key (kbd "C-O") 'kafkalib/open-prev-line)
+
+;; *** Swap indentation commands
+(global-set-key (kbd "M-m") 'move-beginning-of-line)
+(global-set-key (kbd "C-a") 'back-to-indentation)
 
 (require 'kafkabro/org)
 (require 'kafkabro/emacs-lisp)
