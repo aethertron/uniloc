@@ -1,4 +1,6 @@
-;;
+;;; package --- Summary
+;;; Commentary:
+;;; Code:
 (server-start)
 ;;
 (load-theme 'deeper-blue)
@@ -125,6 +127,9 @@
 
 ;; - hg support (monky)
 (use-package monky :ensure t)
+
+(use-package ws-butler :ensure t)
+(ws-butler-global-mode)
 
 ;; * line
 (use-package page-break-lines :ensure t)
