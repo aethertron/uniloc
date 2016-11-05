@@ -1,4 +1,9 @@
+;;; package --- Summary
+;;; Commentary
 ;; kafkabro's org config
+
+;;; Code:
+
 ;; * org-mode begin
 (require 'org)
 (require 'kafkalib/etc)
