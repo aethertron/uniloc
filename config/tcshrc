@@ -1,0 +1,18 @@
+# ~/.tcshrc 
+# 
+#
+# NOTE: This file should contain tcsh-specific settings only.
+#       All other csh settings should appear in .cshrc
+#
+
+source ~/.cshrc
+
+if ( $?prompt ) then
+  # interactive shell
+
+  set autologout	# Disable the auto-logout feature
+  set edit		# Use command-line editing
+  bindkey -e		# ... with an emacs keymap
+  # bindkey -v		# ... with an vi keymap
+endif
+
