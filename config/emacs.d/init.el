@@ -140,6 +140,7 @@
 
 ;; ** flycheck config
 (use-package flycheck :ensure t)
+(global-flycheck-mode)
 
 ;; * ace-link begin
 (use-package ace-link :ensure t)
