@@ -115,7 +115,7 @@
  '(org-treat-insert-todo-heading-as-state-change t)
  '(package-selected-packages
    (quote
-    (page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
+    (ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
  '(revert-without-query (quote (".*")))
  '(tool-bar-mode nil))
 (custom-set-faces
