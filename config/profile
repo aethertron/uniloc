@@ -1,4 +1,4 @@
-#
+#!/usr/bin/sh
 # ~/.profile
 #
 # uniloc's configuration for bash and zsh login shells 
@@ -6,7 +6,7 @@
 
 # add uniloc to path, pythonpath and manpath
 export PATH="~/uniloc/bin:$PATH"
-export PYTHONPATH="~/uniloc/lib/python" # 
+export PYTHONPATH="~/uniloc/py" # 
 # export MANPATH=":$MANPATH"
 
 # give user opportunity to define their own config
