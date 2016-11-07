@@ -52,7 +52,6 @@ doesn't appear to be working"
   (local-set-key (kbd "M-]") 'org-shiftright )
   (local-set-key (kbd "C-M-{") 'org-shiftcontrolleft )
   (local-set-key (kbd "C-M-}") 'org-shiftcontrolright )
-  (local-set-key (kbd "M-8") 'org-force-cycle-archived)
   )
 
 (defun kafkabro/org-mode-hook ()
@@ -62,10 +61,11 @@ doesn't appear to be working"
   (local-set-key (kbd "C-c a") 'org-agenda)
   (local-set-key (kbd "<C-tab>") 'next-multiframe-window)
   ;;
-  (kafkabro/org-map-disputed-keys)
+  ;;(kafkabro/org-map-disputed-keys)
   ;;
   (local-set-key (kbd "C-8") 'org-cycle)
   (local-set-key (kbd "C-*") 'org-global-cycle)
+  (local-set-key (kbd "M-8") 'org-force-cycle-archived)
   )
 
 (add-hook 'org-mode-hook 'kafkabro/org-mode-hook)
