@@ -32,7 +32,7 @@ import argparse
 import csv
 import shutil
 import tempfile
-
+from uniloc_utils import argparse_filter_parser
 
 csv.register_dialect('ctsv', csv.excel_tab, lineterminator='\n',
                      doublequote=False, escapechar='\\',
@@ -92,25 +92,6 @@ def csv2sql(fin, fout, tablename, dialect=None, delimiter=None, hasheader=None):
     # * Close
     fin.close()
     fout.close()
-
-
-def argparse_filter_parser():
-    '''
-    parser for using file in/out convention with
-    stdin/stdout being the default
-    '''
-    parser = argparse.ArgumentParser(add_help=False)
-    parser.add_argument('-i', '--input',
-                        dest='fin',
-                        type=argparse.FileType('r'),
-                        default=sys.stdin,
-                        help='input file')
-    parser.add_argument('-o', '--output',
-                        dest='fout',
-                        type=argparse.FileType('w'),
-                        default=sys.stdout,
-                        help='output file')
-    return parser
 
 
 def main(args):
