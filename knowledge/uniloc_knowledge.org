@@ -1,0 +1,18 @@
+- [2016-11-06 Sun 23:48] This is a place for general knowledge!
+
+* Data munging
+- Want to be able to easily go between
+** Tables
+- Want to easily go between
+  + csv (one header line at most! no comments)
+  + sql
+  + excel (xlsx, xls)
+  + bluefiles
+  + json (maybe)
+  + org
+  + augmented csv (ctsv (commented csv), etc.)
+- org
+  + can currently export and import csv with largely no issues
+- csv
+  + to org is no issue
+  + to sql is covered by uniloc python prog
