@@ -2,6 +2,12 @@
 ;;; Commentary:
 ;;; Code:
 (server-start)
+;; site-lisp
+(setq site-lisp "~/.emacs.d/site-lisp")
+(add-to-list 'load-path site-lisp)
+;; load settings / customize
+(setq custom-file (concat user-emacs-directory "settings.el"))
+(load custom-file)
 ;;
 (load-theme 'deeper-blue)
 ;; -- Minor Modes Begin --
@@ -25,8 +31,6 @@
 (global-unset-key (kbd "<XF86Forward>"))
 ;; -- window management end --
 
-
-
 ;; -- Paths/Packages Etc
 ;; packages
 (require 'package)
@@ -35,17 +39,11 @@
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 ;; (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
-;; site-lisp
-(setq site-lisp "~/.emacs.d/site-lisp")
-(add-to-list 'load-path site-lisp)
 ;; initialize packages and grab use-package
 (package-initialize)  ;; add elpa to the load path?
 (require 'use-package) ;; note: if fail, install use-package manually
 ;; -- Path/Packages End
 
-;; customize
-(setq custom-file (concat user-emacs-directory "settings.el"))
-(load custom-file)
 
 
 ;; ** global key mapping
@@ -196,10 +194,16 @@
 (use-package json-mode :ensure t)	; importing this allows flycheck to work with json
 
 ;; ** python mode
+;; *** elpy enable: requires pip install of python packages:
+;;     pip install jedi flake8 importmagic autopep8 yapf
+(use-package elpy :ensure t)
+(elpy-enable)
+
 (defun wgs85/python-mode-hook ()
   "Python mode hook."
   (toggle-truncate-lines 1))
 (add-hook 'python-mode 'wgs85/python-mode-hook)
+
 
 
 ;; * machine-specific config
