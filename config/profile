@@ -6,7 +6,7 @@
 
 # add uniloc to path, pythonpath and manpath
 export PATH="~/uniloc/bin:~/local/bin:~/bin:$PATH"
-export PYTHONPATH="~/uniloc/py" # 
+export PYTHONPATH="$HOME/uniloc/py" #
 # export MANPATH=":$MANPATH"
 
 # give user opportunity to define their own config
