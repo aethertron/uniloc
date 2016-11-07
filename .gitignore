@@ -1,2 +1,3 @@
 
 config/emacs.d/site-lisp/org-agenda-files
+*.pyc
