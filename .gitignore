@@ -1,3 +1,6 @@
 
 config/emacs.d/site-lisp/org-agenda-files
+config/emacs.d/elpa/
+config/emacs.d/bookmarks/
 *.pyc
+ido.last
