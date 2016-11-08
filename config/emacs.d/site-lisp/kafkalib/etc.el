@@ -48,5 +48,10 @@
   (indent-according-to-mode))
 
 
+;;; etc
+(defun kafkalib/warn ()
+  (message "can't let you do that star fox"))
+
+
 (provide 'kafkalib/etc)
 ;;; etc.el ends here
