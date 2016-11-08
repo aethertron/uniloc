@@ -132,9 +132,6 @@
 (global-set-key (kbd "C-h M-a") 'nispio/helm-customize-option)
 ;; * nispio section end
 
-;; - hg support (monky)
-(use-package monky :ensure t)
-
 (use-package ws-butler :ensure t)
 (ws-butler-global-mode)
 
