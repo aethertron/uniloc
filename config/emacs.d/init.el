@@ -149,11 +149,13 @@
 (use-package discover :ensure t)
 
 ;; ** semantic mode
-(semantic-mode)
+(require 'semantic)
+(global-semanticdb-minor-mode)
 
 ;; ** flycheck config
-(use-package flycheck :ensure t)
-(global-flycheck-mode)
+(when (load "flycheck" t)
+      (use-package flycheck :ensure t)
+      (global-flycheck-mode))
 
 ;; * ace-link begin
 (use-package ace-link :ensure t)
