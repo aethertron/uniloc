@@ -2,9 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 (server-start)
-;; site-lisp
-(setq site-lisp "~/.emacs.d/site-lisp")
-(add-to-list 'load-path site-lisp)
 ;; load settings / customize
 (setq custom-file (concat user-emacs-directory "settings.el"))
 (load custom-file)
@@ -15,9 +12,6 @@
 (show-paren-mode 1)
 (column-number-mode 1)
 (ido-mode 1)
-(global-linum-mode 1)
-(display-time-mode 1)
-;; (global-hl-line-mode 1)
 ;; -- Minor Modes End --
 ;;
 (setq mouse-autoselect-window t)
@@ -32,13 +26,17 @@
 ;; -- window management end --
 
 ;; -- Paths/Packages Etc
+;; site-lisp
+(setq site-lisp "~/.emacs.d/site-lisp")
+(add-to-list 'load-path site-lisp)
+
 ;; packages
 (require 'package)
 (setq package-archives '())
-;; (add-to-list 'package-archives '("local-misc" . "~/.emacs.d/local-elpa-misc/"))
-(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-;; (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
+(when (not (load "local-package-archives.el" t))
+  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
+  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/")))
+
 ;; initialize packages and grab use-package
 (package-initialize)  ;; add elpa to the load path?
 (require 'use-package) ;; note: if fail, install use-package manually
@@ -62,7 +60,7 @@
 (global-unset-key (kbd "C-o"))
 (global-unset-key (kbd "C-O"))
 (global-set-key (kbd "C-o") 'kafkalib/open-next-line)
-(global-set-key (kbd "C-O") 'kafkalib/open-prev-line)
+(global-set-key (kbd "C-S-o") 'kafkalib/open-prev-line)
 
 ;; *** Swap indentation commands
 (global-set-key (kbd "M-m") 'move-beginning-of-line)
