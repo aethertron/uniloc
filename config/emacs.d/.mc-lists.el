@@ -35,6 +35,7 @@
 	org-shiftup
 	org-yank
 	smex
+	orgtbl-self-insert-command
 	))
 
 (setq mc/cmds-to-run-once
