@@ -146,7 +146,7 @@
 ;; discover-my-major
 (use-package discover-my-major :ensure t)
 ;; discover
-(use-package discover :ensure t)
+;;(use-package discover :ensure t)
 
 ;; ** semantic mode
 (require 'semantic)
@@ -163,8 +163,8 @@
 ;; * ace-link end
 
 ;; gnuplot begin
-(use-package gnuplot :ensure t)
-(use-package gnuplot-mode :ensure t)
+;; (use-package gnuplot :ensure t)
+;; (use-package gnuplot-mode :ensure t)
 
 ;; zygosphere
 (use-package zygospore :ensure t)
@@ -184,6 +184,7 @@
 (defun wgs85/shell-mode-hook ()
   (local-unset-key (kbd "M-p")) 	; remove comint-previous-input from local map
   (local-set-key (kbd "M-p") 'comint-previous-matching-input-from-input)
+  (orgtbl-mode)
   )
 (add-hook 'shell-mode-hook 'wgs85/shell-mode-hook)
 
@@ -198,9 +199,14 @@
 
 (defun wgs85/python-mode-hook ()
   "Python mode hook."
-  (toggle-truncate-lines 1))
+  (toggle-truncate-lines 1)
+  (orgtbl-mode))
 (add-hook 'python-mode 'wgs85/python-mode-hook)
 
+
+;;  * execute local elisp
+(when (load "local" t)
+  (message "Running local elisp code"))
 
 
 ;; * machine-specific config
