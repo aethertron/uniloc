@@ -16,3 +16,12 @@
 - csv
   + to org is no issue
   + to sql is covered by uniloc python prog
+
+* Bash
+
+** Gotchas
+- source: http://www.tldp.org/LDP/abs/html/gotchas.html
+- bash is finicky about whitespace, especially in assignments
+- confusing str and math operators
+  - "-eq" is for comparing ints, "=" is for literal variables
+  - "-lt" is for ints, "<" is for literals/strings
