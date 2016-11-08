@@ -15,9 +15,11 @@
 
 
 (defun kafkalib/launch-shell (arg)
-  "Launches a shell with a unique name.  ARG: shell type."
-  (interactive "P")
-  (shell (concat  (substring (pwd) 10))))
+  (interactive "p")
+  (if (= arg 1) (shell (let ((elems (split-string (helm-current-directory) "/" t)))
+			 (concat (-last-item elems) " (/"
+				 (s-join "/" (-slice elems 0 (- (length elems) 1))) "/)")))
+    (if (= arg 4) (shell (read-string "shell buffer name: ")))))
 
 
 (defun kafkalib/copy-buffer-filename ()
