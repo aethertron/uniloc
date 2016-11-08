@@ -1,6 +1,13 @@
+*.pyc
 
 config/emacs.d/site-lisp/org-agenda-files
+config/emacs.d/site-lisp/local-package-archives.el
 config/emacs.d/elpa/
+config/emacs.d/semanticdb/
+config/emacs.d/local-elpa/
+config/emacs.d/smex-items
+config/emacs.d/ido.last
 config/emacs.d/bookmarks/
-*.pyc
-ido.last
+
+test/
+local.el
