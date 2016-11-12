@@ -17,6 +17,8 @@
   + to org is no issue
   + to sql is covered by uniloc python prog
 
+* Elisp Packages
+nispio/package import functions
 * Bash
 
 ** Gotchas
