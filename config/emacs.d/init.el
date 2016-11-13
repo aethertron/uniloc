@@ -13,6 +13,9 @@
 (column-number-mode 1)
 (ido-mode 1)
 ;; -- Minor Modes End --
+;; global-config
+(setq truncate-lines 1)
+;;(set-frame-parameter (selected-frame) 'alpha '(85 50))
 
 ;;
 (setq mouse-autoselect-window t)
@@ -84,7 +87,13 @@
 ;; * company mode
 (use-package company :ensure t)
 (global-company-mode)
-
+(defun kafkalib/company-mode-hook ()
+  "Executed by company mode."
+  ;; Remap autocomplete keys
+  (local-set-key (kbd "C-M-i") 'company-complete)
+  (local-set-key (kbd "C-M-S-i") 'completion-at-point) ; old binding moved here
+  )
+(add-hook 'company-mode-hook 'kafkalib/company-mode-hook)
 
 ;; * helm modes begin
 (use-package helm :ensure t)
