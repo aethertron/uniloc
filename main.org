@@ -14,8 +14,7 @@
 
   + Thus it's totally cool to configure things that won't work on carve yet!
 
-* Tasks
-** Create my own local-elpa!
+  + Far future: a lean .emacs.d that will work even when there are no available packages!
 
 * Remotes
 - Origin: https://github.com/kafkaBro/uniloc.git
