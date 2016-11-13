@@ -12,6 +12,11 @@
 
   + Carve will merge
 
+  + Thus it's totally cool to configure things that won't work on carve yet!
+
+* Tasks
+** Create my own local-elpa!
+
 * Remotes
 - Origin: https://github.com/kafkaBro/uniloc.git
 - Primary Remote/Branch is Origin/Master
