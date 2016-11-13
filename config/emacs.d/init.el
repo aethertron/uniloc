@@ -33,6 +33,7 @@
 ;; packages
 (require 'package)
 (setq package-archives '())
+
 (when (not (load "local-package-archives.el" t))
   (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/")))
@@ -86,6 +87,7 @@
 (global-set-key (kbd "M-X") 'helm-M-x)
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 (global-set-key (kbd "C-x c i") 'helm-semantic-or-imenu)
+(global-set-key (kbd "C-h p") 'helm-list-elisp-packages)
 ;; ** helm desc key
 (use-package helm-descbinds :ensure t)
 (helm-descbinds-mode t)
