@@ -1,0 +1,105 @@
+- For tracking progress, etc
+
+- [2016-11-13 Sun 13:26] Created this.
+
+- Branch concepts
+
+  + Let's make sure commits main branch work on Blue and Kafkanet!
+
+  + Working on carve is not a requirement
+
+  + Would like to build towards always working on carve!
+
+  + Carve will merge
+
+* Remotes
+- Origin: https://github.com/kafkaBro/uniloc.git
+- Primary Remote/Branch is Origin/Master
+
+#+BEGIN_SRC sh
+git remote -v
+#+END_SRC
+#+RESULTS:
+| origin | https://github.com/kafkaBro/uniloc.git (fetch) |
+| origin | https://github.com/kafkaBro/uniloc.git (push)  |
+
+* Structure
+:PROPERTIES:
+:ID:       e2cd7814-8ad1-4d61-be9c-ce0a14601276
+:END:
+** src
+:PROPERTIES:
+:ID:       05f530d1-8469-4de4-9a5c-d29817c25e69
+:END:
+*** source for software projects
+:PROPERTIES:
+:ID:       8c92e382-b5db-49ff-9b90-d6a74828025a
+:END:
+*** i.e. collections of data that provide scripts to produce executables
+:PROPERTIES:
+:ID:       5b68c52e-2bec-4331-9b36-ab9b36cb08f3
+:END:
+** bin
+:PROPERTIES:
+:ID:       553f09eb-e486-479d-a33a-1c35760063a9
+:END:
+*** exists as a dir, only interpretted code lives here if at all
+:PROPERTIES:
+:ID:       e878aefc-dcf3-450b-a0c2-9b8e51a686b2
+:END:
+*** generally source will place stuff here
+:PROPERTIES:
+:ID:       4d805fec-e9a2-46ce-a237-68ecfba6a3c9
+:END:
+** config
+:PROPERTIES:
+:ID:       e664996b-5088-41b8-9bee-ac2eecde5c69
+:END:
+*** adopting unix tradition, config files
+:PROPERTIES:
+:ID:       f26f787f-b97f-4ccb-967f-b1b2f6068fdb
+:END:
+*** confdir
+:PROPERTIES:
+:ID:       6921a863-a491-4572-af33-3ae9a0205ffb
+:END:
+**** config directories that can be operated on using scripts
+:PROPERTIES:
+:ID:       e9c6b1a1-81cc-4696-a652-2b93ce3a3ba0
+:END:
+** lib
+:PROPERTIES:
+:ID:       3246ba8d-59b4-4c9b-a6e2-fc0ef40e5d66
+:END:
+** include
+:PROPERTIES:
+:ID:       ee58de95-2ece-454d-bb14-57d8efed473e
+:END:
+*** echoing nix trees, header files
+:PROPERTIES:
+:ID:       5eb96927-06b7-4d47-ad1d-91dbb9da723a
+:END:
+** repo
+:PROPERTIES:
+:ID:       a1c3141b-c24e-406e-b181-8f3255212a63
+:END:
+*** new concept: all repos go here
+:PROPERTIES:
+:ID:       a48c4c8f-064f-418c-a659-a30bbce5d9aa
+:END:
+*** dirs: git, hg
+:PROPERTIES:
+:ID:       5a1fdce6-729a-436f-b340-e0a140808109
+:END:
+** data
+:PROPERTIES:
+:ID:       1a044cd7-bc2e-429c-bbd6-5f63dfcd50e4
+:END:
+*** shared data structures that don't produce executables, etc
+:PROPERTIES:
+:ID:       b449f20f-9479-4f14-b714-eb8858c9dcae
+:END:
+*** for now it's kinda of a misc area
+:PROPERTIES:
+:ID:       feca3cd4-cd89-4aec-a2fa-b05002e4a120
+:END:
