@@ -13,6 +13,7 @@
 (column-number-mode 1)
 (ido-mode 1)
 ;; -- Minor Modes End --
+
 ;;
 (setq mouse-autoselect-window t)
 ;; -- window management related -- 
@@ -80,6 +81,11 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
+;; * company mode
+(use-package company :ensure t)
+(global-company-mode)
+
+
 ;; * helm modes begin
 (use-package helm :ensure t)
 (global-set-key (kbd "M-s o") 'helm-occur) ;; remap occur to helm-occur
@@ -88,6 +94,13 @@
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 (global-set-key (kbd "C-x c i") 'helm-semantic-or-imenu)
 (global-set-key (kbd "C-h p") 'helm-list-elisp-packages)
+;; ** helm swoop
+(use-package helm-swoop :ensure t)
+(global-set-key (kbd "M-s i") 'helm-swoop)
+(global-set-key (kbd "M-s I") 'helm-swoop-back-to-last-point)
+(global-set-key (kbd "M-s M-i i") 'helm-multi-swoop)
+(global-set-key (kbd "M-s M-i I") 'helm-multi-swoop-all)
+
 ;; ** helm desc key
 (use-package helm-descbinds :ensure t)
 (helm-descbinds-mode t)
