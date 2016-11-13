@@ -19,7 +19,7 @@
 
 ;;
 (setq mouse-autoselect-window t)
-;; -- window management related -- 
+;; -- window management related --
 (windmove-default-keybindings)
 ;; ctrl-tab support
 (global-set-key (kbd "<C-tab>") 'next-multiframe-window)
@@ -179,7 +179,21 @@
 ;; ** flycheck config
 (when (load "flycheck" t)
       (use-package flycheck :ensure t)
-      (global-flycheck-mode))
+      (global-flycheck-mode)
+      (use-package flycheck-pos-tip :ensure t)
+      (flycheck-pos-tip-mode)
+      (defun kafkalib/flycheck-mode-hook ()
+	(local-set-key (kbd "C-c e") 'flycheck-display-error-at-point)
+	(local-set-key (kbd "C-.") 'flycheck-next-error)
+	(local-set-key (kbd "C-,") 'flycheck-previous-error)
+	)
+      (add-hook 'flycheck-mode-hook 'kafkalib/flycheck-mode-hook)
+
+      ;; flycheck is not my thing at the moment
+      ;;(use-package eclim :ensure t)	; flycheck errored on builld w/o eclim
+      ;;(use-package flycheck-tip :ensure t)
+      ;;(local-set-key (kbd "C-c e") 'flycheck-tip-cycle)
+      )
 
 ;; * ace-link begin
 (use-package ace-link :ensure t)
@@ -235,7 +249,7 @@
 
 ;; * machine-specific config
 (defun wgs85/fathertron-config ()
-  ;; * geeknote begin
+  "Geeknote begin."
   (set-face-attribute 'default nil :height 90)
   (use-package geeknote :ensure t)
   ;; * geeknote end
