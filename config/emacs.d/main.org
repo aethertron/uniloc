@@ -1,0 +1,20 @@
+- [2016-11-13 Sun 13:43] Realized .emacs.d specific things should go here!
+
+- Branch concepts
+
+  + Copied from uniloc/main.org since it especially applies in this package!
+
+  + Let's make sure commits main branch work on Blue and Kafkanet!
+
+  + Working on carve is not a requirement
+
+  + Would like to build towards always working on carve!
+
+  + Carve will merge
+
+  + Thus it's totally cool to configure things that won't work on carve yet!
+
+  + Far future: a lean .emacs.d that will work even when there are no available packages!
+
+* Tasks
+** Create my own local-elpa!
