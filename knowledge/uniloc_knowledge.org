@@ -27,3 +27,10 @@ nispio/package import functions
 - confusing str and math operators
   - "-eq" is for comparing ints, "=" is for literal variables
   - "-lt" is for ints, "<" is for literals/strings
+* Linux
+** Sudoers
+#+BEGIN_EXAMPLE
+# as root
+adduser foo -a -G wheel
+# this means "big wheel"
+#+END_EXAMPLE
