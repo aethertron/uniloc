@@ -21,6 +21,7 @@
    (quote
     ("\\` " "\\*helm" "\\*helm-mode" "\\*Echo Area" "\\*Minibuf" "\\*.*\\*")))
  '(helm-split-window-default-side (quote right))
+ '(ido-default-buffer-method (quote selected-window))
  '(ido-use-virtual-buffers (quote auto))
  '(magit-log-arguments
    (quote
