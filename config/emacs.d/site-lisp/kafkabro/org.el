@@ -26,6 +26,7 @@
    (js . t)
    (sh . t)
    (org . t)
+   (sqlite . t)
    ;; *** diagraming langs
    (ditaa . t)
    (plantuml . t)))
