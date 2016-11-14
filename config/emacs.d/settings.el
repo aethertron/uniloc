@@ -96,7 +96,7 @@
     ((auto-mode . emacs)
      ("\\.mm\\'" . default)
      ("\\.x?html?\\'" . default)
-     ("\\.pdf\\'" . "xreader %s"))))
+     ("\\.pdf\\'" . "evince %s"))))
  '(org-goto-max-level 5)
  '(org-habit-following-days 2)
  '(org-icalendar-alarm-time 30)
