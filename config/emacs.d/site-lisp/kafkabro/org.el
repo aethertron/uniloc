@@ -59,8 +59,7 @@ doesn't appear to be working"
   ;; org-specific minor modes
   (org-indent-mode)
   ;; 
-  (local-set-key (kbd "C-c a") 'org-agenda)
-  (local-set-key (kbd "<C-tab>") 'next-multiframe-window)
+  (local-unset-key (kbd "<C-tab>"))
   ;;
   ;;(kafkabro/org-map-disputed-keys)
   ;;
