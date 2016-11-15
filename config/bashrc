@@ -1,3 +1,4 @@
+#!/bin/bash
 if [[ $- != *i* ]] ; then
 	# Shell is non-interactive.  Be done now!
 	return
@@ -39,7 +40,7 @@ if [ -f ~/.bash_functions ]; then
 fi
 
 # * tools
-source /home/wgs/uniloc/src/git-subrepo/.rc
+source ~/uniloc/src/git-subrepo/.rc
 
 export PAGER=cat
 
