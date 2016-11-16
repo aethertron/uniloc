@@ -101,7 +101,7 @@
  '(org-goto-max-level 5)
  '(org-habit-following-days 2)
  '(org-icalendar-alarm-time 30)
- '(org-icalendar-combined-agenda-file "~/Dropbox/todo/org.ics")
+ '(org-icalendar-combined-agenda-file "~/Dropbox/todo/agenda.ics")
  '(org-icalendar-include-todo t)
  '(org-icalendar-store-UID t)
  '(org-insert-heading-respect-content t)
