@@ -18,6 +18,8 @@
   + to sql is covered by uniloc python prog
 
 * C++ Dev
+- xref-find-references is incredibly useful!
+** Semantic
 - Semantic shines here but path config isn't project-specific by default!
 - However, can use the 'ede' package to acehive this!
 - This apparently feed into everything
@@ -29,6 +31,7 @@ create ~/.emacs.d/cedet-projects.el
                       :file "/dir/to/project_root/Makefile")
 (global-ede-mode)
 # more flushed out
+# important: must prepend with slashes! without /, is relative to current file
 (ede-cpp-root-project "project_root"
                       :file "/dir/to/project_root/Makefile"
                       :include-path '("/include1"
@@ -37,8 +40,8 @@ create ~/.emacs.d/cedet-projects.el
                       :system-include-path '("~/linux"))
 #+END_EXAMPLE
 
-** Semantic
-- Been wrestling with semantic for awhile
+*
+  - Been wrestling with semantic for awhile
 - Looks like if you need the mode arg if the mode you want to append
   to is different from the one you're in
 - I feel the cleanest way to config include paths is listed below
@@ -48,6 +51,14 @@ create ~/.emacs.d/cedet-projects.el
 (semanticdb-mode 1)
 (semantic-add-system-include "/home/wgs/uniloc/test/cpp_proj/testlib" 'c++-mode)
 #+END_EXAMPLE
+
+*** Code Folding
+- There should be a global-semantic-tag-folding-mode variable
+- Can't find it, is it only in the newest semantic?
+- Look at CEDET outside of distro
+
+** Senator
+*** Code folding
 * Elisp Packages
 nispio/package import functions
 * Bash
