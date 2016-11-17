@@ -21,7 +21,6 @@
    (quote
     ("\\` " "\\*helm" "\\*helm-mode" "\\*Echo Area" "\\*Minibuf" "\\*.*\\*")))
  '(helm-split-window-default-side (quote right))
- '(ido-default-buffer-method (quote selected-window))
  '(ido-use-virtual-buffers (quote auto))
  '(magit-log-arguments
    (quote
@@ -37,7 +36,9 @@
      ("p" "Primary: Agenda and Autotimers"
       ((agenda "" nil)
        (tags "AUTOTIMER:daily:" nil))
-      nil nil))))
+      nil nil)
+     ("x" "Export agenda" agenda "" nil
+      ("~/Dropbox/todo/agenda.txt" "~/Dropbox/todo/agenda.html")))))
  '(org-agenda-dim-blocked-tasks nil)
  '(org-agenda-files "~/.emacs.d/site-lisp/org-agenda-files")
  '(org-agenda-skip-deadline-if-done nil)
