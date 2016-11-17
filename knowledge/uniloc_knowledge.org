@@ -18,7 +18,7 @@
   + to sql is covered by uniloc python prog
 
 * C++ Dev
-- xref-find-references is incredibly useful!
+- xref-find-references is incredibly useful! (M-? . xref-find-references)
 ** Semantic
 - Semantic shines here but path config isn't project-specific by default!
 - However, can use the 'ede' package to acehive this!
@@ -39,9 +39,7 @@ create ~/.emacs.d/cedet-projects.el
                       ;; paths here
                       :system-include-path '("~/linux"))
 #+END_EXAMPLE
-
-*
-  - Been wrestling with semantic for awhile
+- Been wrestling with semantic for awhile
 - Looks like if you need the mode arg if the mode you want to append
   to is different from the one you're in
 - I feel the cleanest way to config include paths is listed below
