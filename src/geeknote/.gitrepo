@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/VitaliyRodnenko/geeknote.git
+	branch = master
+	commit = 8489a87d044e164edb321ba9acca8d4631de3dca
+	parent = 27393727383813931cbfdbf51f21254027976270
+	cmdver = 0.3.0
