@@ -7,8 +7,21 @@
 (defun kafka/c-mode-common-hook ()
   "Setup keybindings etc."
   (local-set-key (kbd "M-.") 'semantic-ia-fast-jump)
-  (local-set-key (kbd "M-.") 'semantic-ia-describe-class)
-    )
+  ;; Jump to include file
+  ;;   mneumonic: "&" is reference
+  (local-set-key (kbd "M-7") 'senator-go-to-up-reference)
+  ;; bind describe class, looks very useful
+  ;;   mneumonic: "This equals"
+  (local-set-key (kbd "C-=") 'semantic-ia-describe-class)
+  ;;   playing with C-z for local mode stuff
+  (local-set-key (kbd "C-z d") 'semantic-ia-describe-class)
+  ;; Find references
+  ;;   mneumonic: # is number of occurences
+  (local-set-key (kbd "M-3") 'semantic-symref)
+  ;; Senator code folding until semantic gets working
+  ;;   mneumonic: "*" is expand/contract
+  (local-set-key (kbd "M-8") 'senator-fold-tag-toggle)
+  )
 (add-hook 'c-mode-common-hook 'kafka/c-mode-common-hook)
 
 
