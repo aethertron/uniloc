@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Fixes xauth problem seen on some Centos7 machines
+# Source: http://gregorygrubbs.com/development/get-remote-x-working-in-karmic/
+# Source read on [2016-11-15 Tue 16:35]
+
+# First we need to add to xauth of the server emacs
+# permission to throw up windows on our X server.
+# But .Xauthorization accumlates so we have to auth
+# more than you'd think.
+xauth -f ~/.Xauthority list | grep -v ':0' | while read foo; do
+  emacsclient -e "(shell-command \"xauth add $foo\")"
+done
