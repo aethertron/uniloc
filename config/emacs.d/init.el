@@ -74,6 +74,7 @@
 (require 'kafkabro/org)
 (require 'kafkabro/emacs-lisp)
 (require 'kafkabro/dired)
+(require 'kafka/c-config)
 
 ;; remove tool-bar
 (require 'menu-bar)
@@ -165,7 +166,6 @@
 
 ;; * dumb-jump
 (use-package dumb-jump :ensure t)
-(dumb-jump-mode 1)
 
 ;; discover-my-major
 (use-package discover-my-major :ensure t)
@@ -174,6 +174,7 @@
 
 ;; ** semantic mode
 (require 'semantic)
+(semantic-mode 1)
 (global-semanticdb-minor-mode)
 
 ;; ** flycheck config
@@ -237,7 +238,7 @@
 
 (defun wgs85/python-mode-hook ()
   "Python mode hook."
-  (toggle-truncate-lines 1)
+  ;;(dumb-jump 1) ; should we use dumb-jump?
   (orgtbl-mode))
 (add-hook 'python-mode 'wgs85/python-mode-hook)
 
