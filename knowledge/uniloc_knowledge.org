@@ -34,3 +34,7 @@ nispio/package import functions
 adduser foo -a -G wheel
 # this means "big wheel"
 #+END_EXAMPLE
+* Org Mode
+** Export
+- For easy agenda export, define export settings in customize and then
+  invoke org-store-agenda-views
