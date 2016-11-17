@@ -17,6 +17,46 @@
   + to org is no issue
   + to sql is covered by uniloc python prog
 
+* C++ Dev
+- xref-find-references is incredibly useful! (M-? . xref-find-references)
+** Semantic
+- Semantic shines here but path config isn't project-specific by default!
+- However, can use the 'ede' package to acehive this!
+- This apparently feed into everything
+- Examples:
+#+BEGIN_EXAMPLE
+create ~/.emacs.d/cedet-projects.el
+# define project with 'anchor file' must be file and not dir!
+(ede-cpp-root-project "project_root"
+                      :file "/dir/to/project_root/Makefile")
+(global-ede-mode)
+# more flushed out
+# important: must prepend with slashes! without /, is relative to current file
+(ede-cpp-root-project "project_root"
+                      :file "/dir/to/project_root/Makefile"
+                      :include-path '("/include1"
+                                      "/include2") ;; add more include
+                      ;; paths here
+                      :system-include-path '("~/linux"))
+#+END_EXAMPLE
+- Been wrestling with semantic for awhile
+- Looks like if you need the mode arg if the mode you want to append
+  to is different from the one you're in
+- I feel the cleanest way to config include paths is listed below
+#+BEGIN_EXAMPLE
+(require 'semantic)
+(semantic-mode 1)
+(semanticdb-mode 1)
+(semantic-add-system-include "/home/wgs/uniloc/test/cpp_proj/testlib" 'c++-mode)
+#+END_EXAMPLE
+
+*** Code Folding
+- There should be a global-semantic-tag-folding-mode variable
+- Can't find it, is it only in the newest semantic?
+- Look at CEDET outside of distro
+
+** Senator
+*** Code folding
 * Elisp Packages
 nispio/package import functions
 * Bash
@@ -38,3 +78,11 @@ adduser foo -a -G wheel
 ** Export
 - For easy agenda export, define export settings in customize and then
   invoke org-store-agenda-views
+
+* Geeknote
+- Docs: http://www.geeknote.me/documentation/
+- This is a uniloc package!
+- Provides access to evernote
+- Run geeknote login to login
+- When at "Two-Factor Authentication", just press return (unless you set it!)
+-

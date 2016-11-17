@@ -9,5 +9,4 @@ config/emacs.d/smex-items
 config/emacs.d/ido.last
 config/emacs.d/bookmarks/
 
-test/
 local.el
