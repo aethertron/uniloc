@@ -34,8 +34,10 @@
 	org-shiftmetaright
 	org-shiftup
 	org-yank
-	smex
 	orgtbl-self-insert-command
+	smex
+	wdired-exit
+	wdired-finish-edit
 	))
 
 (setq mc/cmds-to-run-once
