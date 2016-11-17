@@ -34,6 +34,10 @@
 ;; default to make sensible archive
 (setq org-archive-default-command 'org-archive-to-archive-sibling)
 
+;; ** org export config
+(use-package htmlize :ensure t)
+
+
 ;; ** org-mode hook
 (defun kafkabro/org-map-disputed-keys ()
   "my own version of dispute keys since the org interface 
