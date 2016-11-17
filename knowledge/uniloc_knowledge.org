@@ -48,7 +48,6 @@ create ~/.emacs.d/cedet-projects.el
 (semanticdb-mode 1)
 (semantic-add-system-include "/home/wgs/uniloc/test/cpp_proj/testlib" 'c++-mode)
 #+END_EXAMPLE
-
 * Elisp Packages
 nispio/package import functions
 * Bash
@@ -66,3 +65,11 @@ nispio/package import functions
 adduser foo -a -G wheel
 # this means "big wheel"
 #+END_EXAMPLE
+
+* Geeknote
+- Docs: http://www.geeknote.me/documentation/
+- This is a uniloc package!
+- Provides access to evernote
+- Run geeknote login to login
+- When at "Two-Factor Authentication", just press return (unless you set it!)
+-
