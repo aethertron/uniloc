@@ -17,4 +17,10 @@
   + Far future: a lean .emacs.d that will work even when there are no available packages!
 
 * Tasks
+:PROPERTIES:
+:ID:       33efcbd8-b051-42fa-acc4-55a2a8ee0d33
+:END:
 ** Create my own local-elpa!
+:PROPERTIES:
+:ID:       7942a7e3-6eea-4ab0-b660-1665abdbeb70
+:END:

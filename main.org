@@ -17,6 +17,9 @@
   + Far future: a lean .emacs.d that will work even when there are no available packages!
 
 * Remotes
+:PROPERTIES:
+:ID:       401223bf-f1b7-436c-819f-134537bce64d
+:END:
 - Origin: https://github.com/kafkaBro/uniloc.git
 - Primary Remote/Branch is Origin/Master
 

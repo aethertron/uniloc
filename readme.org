@@ -1,3 +1,9 @@
 
 * uniloc: Universal Local
-** this is a universal nix config 
+:PROPERTIES:
+:ID:       9bcb9a06-6a3b-443e-87e7-2b357aee47bc
+:END:
+** this is a universal nix config
+:PROPERTIES:
+:ID:       2e8c8308-439e-4459-b7bf-b6b541308b38
+:END:
