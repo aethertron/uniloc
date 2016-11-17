@@ -17,6 +17,38 @@
   + to org is no issue
   + to sql is covered by uniloc python prog
 
+* C++ Dev
+- Semantic shines here but path config isn't project-specific by default!
+- However, can use the 'ede' package to acehive this!
+- This apparently feed into everything
+- Examples:
+#+BEGIN_EXAMPLE
+create ~/.emacs.d/cedet-projects.el
+# define project with 'anchor file' must be file and not dir!
+(ede-cpp-root-project "project_root"
+                      :file "/dir/to/project_root/Makefile")
+(global-ede-mode)
+# more flushed out
+(ede-cpp-root-project "project_root"
+                      :file "/dir/to/project_root/Makefile"
+                      :include-path '("/include1"
+                                      "/include2") ;; add more include
+                      ;; paths here
+                      :system-include-path '("~/linux"))
+#+END_EXAMPLE
+
+** Semantic
+- Been wrestling with semantic for awhile
+- Looks like if you need the mode arg if the mode you want to append
+  to is different from the one you're in
+- I feel the cleanest way to config include paths is listed below
+#+BEGIN_EXAMPLE
+(require 'semantic)
+(semantic-mode 1)
+(semanticdb-mode 1)
+(semantic-add-system-include "/home/wgs/uniloc/test/cpp_proj/testlib" 'c++-mode)
+#+END_EXAMPLE
+
 * Elisp Packages
 nispio/package import functions
 * Bash
