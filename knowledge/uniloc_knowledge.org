@@ -61,6 +61,20 @@ create ~/.emacs.d/cedet-projects.el
 nispio/package import functions
 * Bash
 
+** Bind
+- For keybindings and for variables
+- To get the escape codes for the arrow keys you can do the following:
+  1. Start cat in a terminal (just cat, no further arguments).
+  2. Type keys on keyboard, you will get things like ^[[A for up arrow and ^[[B for down arrow.
+  3. Replace ^[ with \e.
+- Mapping completions
+cat results:
+| emacs   | cat result | bash |
+| "M-p"   | ^[p        | \ep  |
+| "M-S-p" | ^[P        | \eP  |
+
+
+
 ** Gotchas
 - source: http://www.tldp.org/LDP/abs/html/gotchas.html
 - bash is finicky about whitespace, especially in assignments
