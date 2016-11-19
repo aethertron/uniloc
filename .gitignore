@@ -10,3 +10,12 @@ config/emacs.d/ido.last
 config/emacs.d/bookmarks/
 
 local.el
+geeknote
+
+# compiled binaries
+bin/geeknote
+bin/gnsync
+bin/html2text
+bin/markdown2
+
+ede-projects.el
