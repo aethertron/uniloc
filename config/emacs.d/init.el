@@ -123,7 +123,6 @@
 	 :map company-active-map ("C-M-S-i" . helm-company)))
 ;; * helm end
 
-
 ;; - avy -
 (use-package avy :ensure t)
 (global-set-key (kbd "C-;") 'avy-goto-word-or-subword-1)
