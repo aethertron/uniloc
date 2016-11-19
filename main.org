@@ -16,6 +16,12 @@
 
   + Far future: a lean .emacs.d that will work even when there are no available packages!
 
+* TODO Learn nispio package functions
+SCHEDULED: <2016-11-17 Thu>
+:LOGBOOK:
+- State "TODO"       from ""           [2016-11-17 Thu 10:02]
+:END:
+- ~/uniloc/config/nispio.emacs.d/site-lisp/nispio/package-config.el
 * Remotes
 :PROPERTIES:
 :ID:       401223bf-f1b7-436c-819f-134537bce64d
