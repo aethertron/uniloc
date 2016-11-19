@@ -86,15 +86,16 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
 ;; * company mode
-(use-package company :ensure t)
+(use-package company :ensure t
+  :bind (:map company-mode-map
+	      ("C-M-i" . company-complete)
+	      ;;("C-M-S-i" . completion-at-point) ; using helm-company instead
+	 :map company-active-map
+	      ("M-p" . nil)
+	      ("M-n" . nil)
+	      ("C-p" . company-select-previous-or-abort)
+	      ("C-n" . company-select-next-or-abort)))
 (global-company-mode)
-(defun kafkalib/company-mode-hook ()
-  "Executed by company mode."
-  ;; Remap autocomplete keys
-  (local-set-key (kbd "C-M-i") 'company-complete)
-  (local-set-key (kbd "C-M-S-i") 'completion-at-point) ; old binding moved here
-  )
-(add-hook 'company-mode-hook 'kafkalib/company-mode-hook)
 
 ;; * helm modes begin
 (use-package helm :ensure t)
@@ -116,6 +117,10 @@
 (helm-descbinds-mode t)
 ;; ** helm-ag
 (use-package helm-ag :ensure t)
+;; ** helm-company
+(use-package helm-company :ensure t
+  :bind (:map company-mode-map ("C-M-S-i" . helm-company)
+	 :map company-active-map ("C-M-S-i" . helm-company)))
 ;; * helm end
 
 
