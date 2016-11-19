@@ -9,6 +9,8 @@
 (require 'kafkalib/etc)
 ;; (require 'org-habit)
 
+(add-to-list 'auto-mode-alist '("\\.org.txt\\'" . org-mode))
+
 ;; *** add stuff
 (global-set-key (kbd "C-c l") 'org-store-link) ; suggested in http://orgmode.org/manual/Handling-links.html
 (global-set-key (kbd "C-c s") 'kafkalib/org-insert-current-time-stamp)
