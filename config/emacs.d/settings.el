@@ -124,7 +124,7 @@
  '(org-treat-insert-todo-heading-as-state-change t)
  '(package-selected-packages
    (quote
-    (minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
+    (helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
  '(revert-without-query (quote (".*")))
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -132,5 +132,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-scrollbar-bg ((t (:background "grey14"))))
+ '(company-scrollbar-fg ((t (:background "white smoke"))))
+ '(company-tooltip ((t (:background "gray" :foreground "black"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "chartreuse"))))
  '(font-lock-comment-face ((t (:foreground "salmon")))))
