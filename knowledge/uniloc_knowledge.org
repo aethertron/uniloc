@@ -92,7 +92,14 @@ adduser foo -a -G wheel
 ** Export
 - For easy agenda export, define export settings in customize and then
   invoke org-store-agenda-views
-
+** Tags
+- "#+TAGS:" used to specify list of tags to use in a specific buffer
+- {} used to denote unrelated tasks
+- can prefix with (a) for shortcut mapped to "a"
+#+BEGIN_EXAMPLE
+#+TAGS: { foo bar } { hot cold froid caliente } { mucho poco } { hombre mujer sin-binario }
+#+END_EXAMPLE
+-
 * Geeknote
 - Docs: http://www.geeknote.me/documentation/
 - This is a uniloc package!
