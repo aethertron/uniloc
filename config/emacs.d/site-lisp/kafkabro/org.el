@@ -63,6 +63,11 @@ doesn't appear to be working"
 
 (defun kafkabro/org-mode-hook ()
   ;; org-specific minor modes
+  ;; try to prevent ede mode map from showing up
+  (ede-minor-mode -1)
+  (local-set-key (kbd "C-.") 'org-time-stamp)
+  ;;
+  (auto-fill-mode)
   (org-indent-mode)
   ;; 
   (local-unset-key (kbd "<C-tab>"))
