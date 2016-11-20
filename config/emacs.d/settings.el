@@ -114,7 +114,7 @@
  '(org-replace-disputed-keys t)
  '(org-return-follows-link t)
  '(org-reverse-note-order t)
- '(org-sparse-tree-open-archived-trees t)
+ '(org-sparse-tree-open-archived-trees nil)
  '(org-special-ctrl-a/e t)
  '(org-startup-align-all-tables t)
  '(org-time-clocksum-use-fractional t)
