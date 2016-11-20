@@ -21,6 +21,9 @@ SCHEDULED: <2016-11-17 Thu>
 :LOGBOOK:
 - State "TODO"       from ""           [2016-11-17 Thu 10:02]
 :END:
+:PROPERTIES:
+:ID:       5784f330-fc77-4016-9fd9-8af0947351b5
+:END:
 - ~/uniloc/config/nispio.emacs.d/site-lisp/nispio/package-config.el
 * Remotes
 :PROPERTIES:
