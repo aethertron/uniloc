@@ -171,6 +171,10 @@
 ;; * dumb-jump
 (use-package dumb-jump :ensure t)
 
+;; * comint mode
+(defun kafka/comint-mode-hook ()
+  (local-set-key (kbd "M-p") 'comint-previous-matching-input-from-input))
+(add-hook 'comint-mode-hook 'kafka/comint-mode-hook)
 ;; discover-my-major
 (use-package discover-my-major :ensure t)
 ;; discover
@@ -225,10 +229,7 @@
 
 ;; ** shell begin
 (defun wgs85/shell-mode-hook ()
-  (local-unset-key (kbd "M-p")) 	; remove comint-previous-input from local map
-  (local-set-key (kbd "M-p") 'comint-previous-matching-input-from-input)
-  (orgtbl-mode)
-  )
+  (orgtbl-mode))
 (add-hook 'shell-mode-hook 'wgs85/shell-mode-hook)
 
 ;; ** json mode
