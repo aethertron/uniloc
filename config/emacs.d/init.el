@@ -278,3 +278,4 @@
 	  (string= system-name "ft-apr.Home")
 	  )
   (wgs85/fathertron-config))
+(put 'dired-find-alternate-file 'disabled nil)
