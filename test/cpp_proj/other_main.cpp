@@ -4,5 +4,4 @@
 int main(){
   std::cout << "Test" << std::endl;
   Bear bear;
-
 }

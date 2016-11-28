@@ -3,7 +3,7 @@
 ;;; Code:
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-(global-ede-mode)
+
 (defun kafka/c-mode-common-hook ()
   "Setup keybindings etc."
   (local-set-key (kbd "M-.") 'semantic-ia-fast-jump)
@@ -21,6 +21,8 @@
   ;; Senator code folding until semantic gets working
   ;;   mneumonic: "*" is expand/contract
   (local-set-key (kbd "M-8") 'senator-fold-tag-toggle)
+  ;; ede mode
+  (ede-minor-mode 1)
   )
 (add-hook 'c-mode-common-hook 'kafka/c-mode-common-hook)
 
