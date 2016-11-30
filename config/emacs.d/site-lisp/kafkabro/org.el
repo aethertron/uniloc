@@ -1,6 +1,6 @@
 ;;; package --- Summary
-;;; Commentary
-;; kafkabro's org config
+;;; Commentary:
+;; kafka's org config
 
 ;;; Code:
 
