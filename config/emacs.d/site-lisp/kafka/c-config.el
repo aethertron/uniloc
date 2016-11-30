@@ -23,14 +23,13 @@
   (local-set-key (kbd "M-8") 'senator-fold-tag-toggle)
   ;; ede mode
   (ede-minor-mode 1)
-  )
+  ;;
+  (ede-cpp-root-project "test_proj" :file "~/uniloc/test/cpp_proj/readme.org"
+		      :include-path '("/proj" "/testlib")))
 (add-hook 'c-mode-common-hook 'kafka/c-mode-common-hook)
 
 
 ;;; Create (uniloc) projects here.
-(ede-cpp-root-project "test_proj" :file "~/uniloc/test/cpp_proj/readme.org"
-		      :include-path '("/proj" "/testlib"))
-
 
 
 (provide 'kafka/c-config)
