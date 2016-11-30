@@ -17,6 +17,7 @@
 	org-columns-previous-allowed-value
 	org-columns-quit
 	org-ctrl-c-ctrl-c
+	org-ctrl-c-minus
 	org-ctrl-c-star
 	org-delete-char
 	org-end-of-line
