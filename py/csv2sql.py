@@ -1,3 +1,4 @@
+
 #!/usr/bin/python2.7
 '''transforms csv file into an sql insert statement
 
