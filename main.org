@@ -25,6 +25,12 @@ SCHEDULED: <2016-11-17 Thu>
 :ID:       5784f330-fc77-4016-9fd9-8af0947351b5
 :END:
 - ~/uniloc/config/nispio.emacs.d/site-lisp/nispio/package-config.el
+
+* TODO Add vert cmd
+SCHEDULED: <2016-12-01 Thu>
+:LOGBOOK:
+- State "TODO"       from ""           [2016-11-29 Tue 19:18]
+:END:
 * Remotes
 :PROPERTIES:
 :ID:       401223bf-f1b7-436c-819f-134537bce64d
