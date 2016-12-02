@@ -59,6 +59,11 @@ create ~/.emacs.d/cedet-projects.el
 *** Code folding
 * Elisp Packages
 nispio/package import functions
+* Git
+- Move head of a branch: git branch -f branch-name new-tip-commit
+- Delete remote branch: git push origin --delete <branch> (git version
+  >= 1.7.0)
+  + old: git push origin :branch (mod of local-branch:branch)
 * Bash
 
 ** Bind
@@ -88,6 +93,8 @@ cat results:
 adduser foo -a -G wheel
 # this means "big wheel"
 #+END_EXAMPLE
+** Chmod
+- Recursively make readable, respecting files: chmod -R g+rX
 * Org Mode
 ** Export
 - For easy agenda export, define export settings in customize and then
