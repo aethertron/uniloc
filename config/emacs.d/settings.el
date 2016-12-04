@@ -46,7 +46,7 @@
  '(org-agenda-skip-timestamp-if-done nil)
  '(org-agenda-span (quote day))
  '(org-agenda-start-on-weekday nil)
- '(org-agenda-start-with-follow-mode t)
+ '(org-agenda-start-with-follow-mode nil)
  '(org-archive-reversed-order t)
  '(org-capture-after-finalize-hook nil)
  '(org-capture-templates
