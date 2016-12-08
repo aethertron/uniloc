@@ -63,7 +63,9 @@ nispio/package import functions
 - Move head of a branch: git branch -f branch-name new-tip-commit
 - Delete remote branch: git push origin --delete <branch> (git version
   >= 1.7.0)
-  + old: git push origin :branch (mod of local-branch:branch)
+  + old: git push origin :branch (mod of local-barnch:branch)
+- Branching info: [[http://stackoverflow.com/questions/2003505/how-to-delete-a-git-branch-both-locally-and-remotely][link]]
+- Setting tracking: git branch --set-upstream foo upstream/foo
 * Bash
 
 ** Bind
