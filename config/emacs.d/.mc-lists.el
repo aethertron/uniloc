@@ -10,6 +10,7 @@
 	indent-for-tab-command
 	kill-region
 	mark-sexp
+	org-agenda-do-date-later
 	org-backward-sentence
 	org-beginning-of-line
 	org-columns-edit-value
