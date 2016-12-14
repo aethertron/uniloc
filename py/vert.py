@@ -12,6 +12,8 @@ def main(args):
     vals = args.fin.read()
     if ',' in vals:
         sep = ','
+    elif ':' in vals:
+        sep = ':'
     else:
         sep = None
     vals = vals.split(sep)
