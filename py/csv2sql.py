@@ -1,6 +1,7 @@
-
 #!/usr/bin/python2.7
-'''transforms csv file into an sql insert statement
+
+'''
+transforms csv file into an sql insert statement
 
 solves a missing feature in the generally quite awesome sqlite3
 
@@ -62,6 +63,9 @@ def get_dialect_and_header(fin, dialect=None, delimiter=None, hasheader=None):
             dialect = sniffer.sniff(sample)
         if hasheader is None:
             hasheader = sniffer.has_header(sample)
+    else:
+        if isinstance(dialect, basestring):
+            dialect = csv.get_dialect(dialect)
     # override delimiter if delimiter set
     if delimiter:
         csv.register_dialect('temp', dialect, delimiter=delimiter)
