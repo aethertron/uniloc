@@ -115,4 +115,3 @@ adduser foo -a -G wheel
 - Provides access to evernote
 - Run geeknote login to login
 - When at "Two-Factor Authentication", just press return (unless you set it!)
--
