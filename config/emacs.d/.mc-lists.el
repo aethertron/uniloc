@@ -8,6 +8,7 @@
 	forward-sexp
 	helm-M-x
 	indent-for-tab-command
+	kafkalib/org-insert-current-time-stamp
 	kill-region
 	mark-sexp
 	org-agenda-do-date-later
