@@ -26,9 +26,10 @@ SCHEDULED: <2016-11-17 Thu>
 :END:
 - ~/uniloc/config/nispio.emacs.d/site-lisp/nispio/package-config.el
 
-* TODO Add vert cmd
+* DONE Add vert cmd
 SCHEDULED: <2016-12-03 Sat>
 :LOGBOOK:
+- State "DONE"       from "TODO"       [2016-12-14 Wed 00:53]
 - State "TODO"       from ""           [2016-11-29 Tue 19:18]
 :END:
 :PROPERTIES:
