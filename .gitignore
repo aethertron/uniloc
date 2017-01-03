@@ -1,5 +1,6 @@
 *.pyc
 
+# * emacs local
 config/emacs.d/site-lisp/org-agenda-files
 config/emacs.d/site-lisp/local-package-archives.el
 config/emacs.d/elpa/
@@ -8,14 +9,17 @@ config/emacs.d/local-elpa/
 config/emacs.d/smex-items
 config/emacs.d/ido.last
 config/emacs.d/bookmarks
+config/emacs.d/image-dired/
+config/emacs.d/ede-projects.el
 
 local.el
 geeknote
 
-# compiled binaries
+# * compiled binaries
 bin/geeknote
 bin/gnsync
 bin/html2text
 bin/markdown2
 
-config/emacs.d/ede-projects.el
+# ** libs
+lib/
