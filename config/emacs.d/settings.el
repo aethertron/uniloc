@@ -11,6 +11,7 @@
  '(company-idle-delay 0.3)
  '(company-minimum-prefix-length 2)
  '(dired-auto-revert-buffer t)
+ '(dired-guess-shell-alist-user (quote (("\\.pdf\\'" "evince"))))
  '(dired-hide-details-hide-information-lines t)
  '(dired-listing-switches "-Alh")
  '(display-time-24hr-format t)
