@@ -35,6 +35,15 @@ SCHEDULED: <2016-12-03 Sat>
 :PROPERTIES:
 :ID:       a3aac116-276a-4b89-a61d-2742401e9dd3
 :END:
+* Bundled Python Packages
+- I don't want to go hog-wild making this a package manager
+- Of-course I am bundled packages that can be installed locally (in
+  user directory)
+- Will document packages as they are added
+** Markdown2
+- I'm pretty sure this was installed by geeknote!
+- This is now used by markdown-mode
+  [2017-01-04 Wed 16:20]
 * Remotes
 :PROPERTIES:
 :ID:       401223bf-f1b7-436c-819f-134537bce64d
