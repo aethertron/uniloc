@@ -26,6 +26,8 @@
  '(magit-log-arguments
    (quote
     ("--graph" "--color" "--decorate" "--patch" "-n256")))
+ '(markdown-coding-system nil)
+ '(markdown-command "markdown2")
  '(menu-bar-mode nil)
  '(org-M-RET-may-split-line nil)
  '(org-agenda-custom-commands
@@ -125,7 +127,7 @@
  '(org-treat-insert-todo-heading-as-state-change t)
  '(package-selected-packages
    (quote
-    (helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
+    (markdown-mode markdown-mode+ markdown-preview-eww markdown-preview-mode helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
  '(revert-without-query (quote (".*")))
  '(tool-bar-mode nil))
 (custom-set-faces
