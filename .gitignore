@@ -1,6 +1,6 @@
 *.pyc
 
-# * emacs local
+# Emacs Local
 config/emacs.d/site-lisp/org-agenda-files
 config/emacs.d/site-lisp/local-package-archives.el
 config/emacs.d/elpa/
@@ -12,14 +12,26 @@ config/emacs.d/bookmarks
 config/emacs.d/image-dired/
 config/emacs.d/ede-projects.el
 
-local.el
+## optional
+config/emacs.d/site-lisp/local.el
 geeknote
 
-# * compiled binaries
+# Build(ing) Products
+## Binaries
 bin/geeknote
 bin/gnsync
 bin/html2text
 bin/markdown2
+bin/markdown
+bin/markdown-it
+bin/node
+bin/npm
 
-# ** libs
+## Includes
+include/
+
+## Libs
 lib/
+
+## Untarred Source (only tarballs committed to repo)
+src/node-v0.12.5/
