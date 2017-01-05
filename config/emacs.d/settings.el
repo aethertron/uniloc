@@ -27,7 +27,7 @@
    (quote
     ("--graph" "--color" "--decorate" "--patch" "-n256")))
  '(markdown-coding-system nil)
- '(markdown-command "markdown2")
+ '(markdown-command "markdown-it")
  '(menu-bar-mode nil)
  '(org-M-RET-may-split-line nil)
  '(org-agenda-custom-commands
