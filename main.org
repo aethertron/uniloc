@@ -115,6 +115,7 @@ SCHEDULED: <2016-12-03 Sat>
 ** Markdown-it
 - CommonMark-compliant Markdown generator
 - Built [2017-01-04 Wed 19:09]
+- Works better than markdown.pl! [2017-01-04 Wed 19:25]
 - To use CLI tool markdown-it, run: npm install markdown-it --save -g
 - -g is used to flag "global"
 * Remotes
