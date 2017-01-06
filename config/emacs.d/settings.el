@@ -70,6 +70,9 @@
  '(org-clock-mode-line-total (quote current))
  '(org-clock-out-switch-to-state nil)
  '(org-clock-report-include-clocking-task t)
+ '(org-clocktable-defaults
+   (quote
+    (:maxlevel 2 :lang "en" :scope file :block nil :wstart 1 :mstart 1 :tstart nil :tend nil :step nil :stepskip0 t :fileskip0 t :tags nil :emphasize nil :link nil :narrow 40! :indent t :formula nil :timestamp nil :level nil :tcolumns nil :formatter nil)))
  '(org-columns-skip-archived-trees nil)
  '(org-completion-use-ido t)
  '(org-confirm-babel-evaluate nil)
