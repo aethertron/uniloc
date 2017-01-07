@@ -106,6 +106,7 @@
  '(org-icalendar-include-todo t)
  '(org-icalendar-store-UID t)
  '(org-insert-heading-respect-content t)
+ '(org-list-demote-modify-bullet (quote (("-" . "+") ("+" . "1.") ("1." . "1)"))))
  '(org-log-into-drawer t)
  '(org-modules
    (quote
