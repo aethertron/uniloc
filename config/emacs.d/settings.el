@@ -14,6 +14,7 @@
  '(dired-guess-shell-alist-user (quote (("\\.pdf\\'" "evince"))))
  '(dired-hide-details-hide-information-lines t)
  '(dired-listing-switches "-Alh")
+ '(dired-omit-files "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^\\..*$")
  '(display-time-24hr-format t)
  '(display-time-day-and-date t)
  '(flycheck-display-errors-delay 0.2)
