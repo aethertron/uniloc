@@ -11,8 +11,10 @@
  '(company-idle-delay 0.3)
  '(company-minimum-prefix-length 2)
  '(dired-auto-revert-buffer t)
+ '(dired-guess-shell-alist-user (quote (("\\.pdf\\'" "evince"))))
  '(dired-hide-details-hide-information-lines t)
  '(dired-listing-switches "-Alh")
+ '(dired-omit-files "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^\\..*$")
  '(display-time-24hr-format t)
  '(display-time-day-and-date t)
  '(flycheck-display-errors-delay 0.2)
@@ -25,6 +27,8 @@
  '(magit-log-arguments
    (quote
     ("--graph" "--color" "--decorate" "--patch" "-n256")))
+ '(markdown-coding-system nil)
+ '(markdown-command "markdown-it")
  '(menu-bar-mode nil)
  '(org-M-RET-may-split-line nil)
  '(org-agenda-custom-commands
@@ -67,6 +71,9 @@
  '(org-clock-mode-line-total (quote current))
  '(org-clock-out-switch-to-state nil)
  '(org-clock-report-include-clocking-task t)
+ '(org-clocktable-defaults
+   (quote
+    (:maxlevel 2 :lang "en" :scope file :block nil :wstart 1 :mstart 1 :tstart nil :tend nil :step nil :stepskip0 t :fileskip0 t :tags nil :emphasize nil :link nil :narrow 40! :indent t :formula nil :timestamp nil :level nil :tcolumns nil :formatter nil)))
  '(org-columns-skip-archived-trees nil)
  '(org-completion-use-ido t)
  '(org-confirm-babel-evaluate nil)
@@ -125,7 +132,7 @@
  '(org-treat-insert-todo-heading-as-state-change t)
  '(package-selected-packages
    (quote
-    (helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
+    (markdown-mode markdown-mode+ markdown-preview-eww markdown-preview-mode helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
  '(revert-without-query (quote (".*")))
  '(tool-bar-mode nil))
 (custom-set-faces

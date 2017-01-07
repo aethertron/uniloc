@@ -1,21 +1,39 @@
+# Python Build Products
 *.pyc
 
+# Emacs Local
 config/emacs.d/site-lisp/org-agenda-files
-config/emacs.d/site-lisp/local-package-archives.el
 config/emacs.d/elpa/
 config/emacs.d/semanticdb/
 config/emacs.d/local-elpa/
 config/emacs.d/smex-items
 config/emacs.d/ido.last
 config/emacs.d/bookmarks
+config/emacs.d/image-dired/
+config/emacs.d/ede-projects.el
 
-local.el
-geeknote
+## Optional
+config/emacs.d/site-lisp/local.el
+config/emacs.d/site-lisp/local-package-archives.el
 
-# compiled binaries
+# Build(ing) Products
+## Binaries
 bin/geeknote
 bin/gnsync
 bin/html2text
 bin/markdown2
+bin/markdown
+bin/markdown-it
+bin/node
+bin/npm
+### Likely to be removed
+bin/geeknote 
 
-config/emacs.d/ede-projects.el
+## Includes
+include/
+
+## Libs
+lib/
+
+## Untarred Source (only tarballs committed to repo)
+src/node-v0.12.5/

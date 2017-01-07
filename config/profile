@@ -4,8 +4,10 @@
 # uniloc's configuration for bash and zsh login shells 
 #   may consider supporting fish in future if it is remotely possible
 
-# add uniloc to path, pythonpath and manpath
+# Add uniloc to path, pythonpath and manpath
 export PATH="~/uniloc/bin:~/local/bin:~/bin:$PATH"
+## Add dirs in /opt (p)
+
 # Python path configuration
 export PYTHONPATH="$HOME/uniloc/py/:$HOME/uniloc/lib/python2.7/site-packages/" #
 export PYTHONPATH="$HOME/local/lib64/python2.7/site-packages/:$PYTHONPATH"

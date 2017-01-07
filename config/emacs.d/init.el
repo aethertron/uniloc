@@ -247,6 +247,14 @@
   (orgtbl-mode))
 (add-hook 'python-mode 'wgs85/python-mode-hook)
 
+
+;; ** markdown mode
+(use-package markdown-mode :ensure t)
+(use-package markdown-mode+ :ensure t)
+(use-package markdown-preview-eww :ensure t)
+(use-package markdown-preview-mode :ensure t)
+
+
 
 ;;  * execute local elisp
 (when (load "local" t)
