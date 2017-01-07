@@ -5,6 +5,8 @@
       '(
 	backward-sexp
 	beginning-of-buffer
+	electric-newline-and-maybe-indent
+	end-of-visual-line
 	forward-sexp
 	helm-M-x
 	indent-for-tab-command
@@ -41,6 +43,7 @@
 	smex
 	wdired-exit
 	wdired-finish-edit
+	yas-expand
 	))
 
 (setq mc/cmds-to-run-once
