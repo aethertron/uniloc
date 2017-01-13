@@ -13,7 +13,7 @@
  '(dired-auto-revert-buffer t)
  '(dired-guess-shell-alist-user (quote (("\\.pdf\\'" "evince"))))
  '(dired-hide-details-hide-information-lines t)
- '(dired-listing-switches "-Alh")
+ '(dired-listing-switches "-alh --group-directories-first")
  '(dired-omit-files "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^\\..*$")
  '(display-time-24hr-format t)
  '(display-time-day-and-date t)
