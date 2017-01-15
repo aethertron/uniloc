@@ -36,17 +36,29 @@ SCHEDULED: <2016-12-03 Sat>
 :ID:       a3aac116-276a-4b89-a61d-2742401e9dd3
 :END:
 * Bundled Python Packages
+:PROPERTIES:
+:ID:       23a80e18-6869-42f4-9480-412f6dea87bc
+:END:
 - I don't want to go hog-wild making this a package manager
 - Of-course I am bundled packages that can be installed locally (in
   user directory)
 - Will document packages as they are added
 ** Markdown2
+:PROPERTIES:
+:ID:       54fa3365-fc53-47f2-8582-7269c6c133ff
+:END:
 - I'm pretty sure this was installed by geeknote!
 - This is now used by markdown-mode
   [2017-01-04 Wed 16:20]
 * Other Bundled Packages
+:PROPERTIES:
+:ID:       aa52c099-0128-411f-9f1d-0fd094a77d64
+:END:
 - doc'ing all packages besides python ones
 ** node.js
+:PROPERTIES:
+:ID:       c1a11097-5952-46e1-a181-34839e11a388
+:END:
 - building [2017-01-04 Wed 17:26]
 
 - attempt 2 [2017-01-04 Wed 18:00]
@@ -110,9 +122,15 @@ SCHEDULED: <2016-12-03 Sat>
   make install
   #+END_SRC
 * Node.js Packages
+:PROPERTIES:
+:ID:       861a698f-28fe-4f89-8e3b-e4cad60d17a5
+:END:
 - Documentating which packages I've installed and used
 - Node.js may end up becoming essential workflow
 ** Markdown-it
+:PROPERTIES:
+:ID:       5440550a-e026-43ac-a8a4-1c27a3bc45da
+:END:
 - CommonMark-compliant Markdown generator
 - Built [2017-01-04 Wed 19:09]
 - Works better than markdown.pl! [2017-01-04 Wed 19:25]
