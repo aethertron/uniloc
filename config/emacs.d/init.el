@@ -111,6 +111,7 @@
 (global-set-key (kbd "M-s I") 'helm-swoop-back-to-last-point)
 (global-set-key (kbd "M-s M-i i") 'helm-multi-swoop)
 (global-set-key (kbd "M-s M-i I") 'helm-multi-swoop-all)
+(global-set-key (kbd "M-s M-i o") 'helm-multi-swoop-org)
 
 ;; ** helm desc key
 (use-package helm-descbinds :ensure t)
