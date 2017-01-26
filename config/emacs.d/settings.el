@@ -108,6 +108,7 @@
      ("\\.pdf\\'" . "evince %s"))))
  '(org-goto-max-level 5)
  '(org-habit-following-days 2)
+ '(org-habit-show-all-today nil)
  '(org-icalendar-alarm-time 30)
  '(org-icalendar-combined-agenda-file "~/Dropbox/todo/agenda.ics")
  '(org-icalendar-include-todo t)
