@@ -148,6 +148,9 @@
 (global-set-key (kbd "<C-S-left>")   'buf-move-left)
 (global-set-key (kbd "<C-S-right>")  'buf-move-right)
 
+;; move-text
+(use-package move-text :ensure t :config (move-text-default-bindings))
+
 ;; - which-key
 (use-package which-key :ensure t)
 (which-key-mode 1)
