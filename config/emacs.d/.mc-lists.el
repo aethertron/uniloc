@@ -38,6 +38,7 @@
 	org-shiftup
 	org-yank
 	orgtbl-self-insert-command
+	sgml-tag
 	smex
 	wdired-exit
 	wdired-finish-edit
