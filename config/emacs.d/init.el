@@ -60,6 +60,7 @@
 (global-set-key (kbd "C-c h") 'hl-line-mode)
 (global-set-key (kbd "C-c f") 'find-file-at-point)
 (global-set-key (kbd "C-c w") 'kafkalib/copy-buffer-filename)
+(global-set-key (kbd "C-c r") 'toggle-truncate-lines) ; pneumonic: (r)otate text
 (global-set-key (kbd "<f5>") 'revert-buffer)
 ;; **** Bring in open lines
 (global-unset-key (kbd "C-o"))
