@@ -53,6 +53,17 @@
  '(org-agenda-start-on-weekday nil)
  '(org-agenda-start-with-follow-mode nil)
  '(org-archive-reversed-order t)
+ '(org-babel-load-languages
+   (quote
+    ((python . t)
+     (emacs-lisp . t)
+     (js . t)
+     (sh . t)
+     (org . t)
+     (sqlite . t)
+     (ditaa . t)
+     (plantuml . t)
+     (dot . t))))
  '(org-capture-after-finalize-hook nil)
  '(org-capture-templates
    (quote
@@ -134,7 +145,7 @@
  '(org-treat-insert-todo-heading-as-state-change t)
  '(package-selected-packages
    (quote
-    (latex-extra latex-math-preview latex-pretty-symbols latex-preview-pane latex-unicode-math-mode auctex markdown-mode markdown-mode+ markdown-preview-eww markdown-preview-mode helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
+    (move-text latex-extra latex-math-preview latex-pretty-symbols latex-preview-pane latex-unicode-math-mode auctex markdown-mode markdown-mode+ markdown-preview-eww markdown-preview-mode helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
  '(revert-without-query (quote (".*")))
  '(tool-bar-mode nil))
 (custom-set-faces
