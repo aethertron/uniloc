@@ -10,10 +10,11 @@
  '(comint-prompt-read-only nil)
  '(company-idle-delay 0.3)
  '(company-minimum-prefix-length 2)
+ '(default-frame-alist (quote ((font . "DejaVu Sans Mono-10.5"))))
  '(dired-auto-revert-buffer t)
  '(dired-guess-shell-alist-user (quote (("\\.pdf\\'" "evince"))))
  '(dired-hide-details-hide-information-lines t)
- '(dired-listing-switches "-Alh")
+ '(dired-listing-switches "-alh --group-directories-first")
  '(dired-omit-files "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^\\..*$")
  '(display-time-24hr-format t)
  '(display-time-day-and-date t)
@@ -108,6 +109,7 @@
      ("\\.pdf\\'" . "evince %s"))))
  '(org-goto-max-level 5)
  '(org-habit-following-days 2)
+ '(org-habit-show-all-today nil)
  '(org-icalendar-alarm-time 30)
  '(org-icalendar-combined-agenda-file "~/Dropbox/todo/agenda.ics")
  '(org-icalendar-include-todo t)
@@ -132,7 +134,7 @@
  '(org-treat-insert-todo-heading-as-state-change t)
  '(package-selected-packages
    (quote
-    (markdown-mode markdown-mode+ markdown-preview-eww markdown-preview-mode helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
+    (latex-extra latex-math-preview latex-pretty-symbols latex-preview-pane latex-unicode-math-mode auctex markdown-mode markdown-mode+ markdown-preview-eww markdown-preview-mode helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
  '(revert-without-query (quote (".*")))
  '(tool-bar-mode nil))
 (custom-set-faces

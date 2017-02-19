@@ -60,6 +60,7 @@
 (global-set-key (kbd "C-c h") 'hl-line-mode)
 (global-set-key (kbd "C-c f") 'find-file-at-point)
 (global-set-key (kbd "C-c w") 'kafkalib/copy-buffer-filename)
+(global-set-key (kbd "C-c r") 'toggle-truncate-lines) ; pneumonic: (r)otate text
 (global-set-key (kbd "<f5>") 'revert-buffer)
 ;; **** Bring in open lines
 (global-unset-key (kbd "C-o"))
@@ -111,6 +112,7 @@
 (global-set-key (kbd "M-s I") 'helm-swoop-back-to-last-point)
 (global-set-key (kbd "M-s M-i i") 'helm-multi-swoop)
 (global-set-key (kbd "M-s M-i I") 'helm-multi-swoop-all)
+(global-set-key (kbd "M-s M-i o") 'helm-multi-swoop-org)
 
 ;; ** helm desc key
 (use-package helm-descbinds :ensure t)
@@ -146,6 +148,9 @@
 (global-set-key (kbd "<C-S-down>")   'buf-move-down)
 (global-set-key (kbd "<C-S-left>")   'buf-move-left)
 (global-set-key (kbd "<C-S-right>")  'buf-move-right)
+
+;; move-text
+(use-package move-text :ensure t :config (move-text-default-bindings))
 
 ;; - which-key
 (use-package which-key :ensure t)
