@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+  </head>
+  <data>
+    <form method="get">
+      <!-- Fieldset 1 -->
+      <fieldset>
+	<legend>Standard Game:
+	</legend>
+	<!-- Dice -->
+	<div class="form-group">
+	  <label>Dice:
+	    <input class="form-control" type="number" value="1" min="1" max="8" step="1" name="dice">
+	  </label>
+	</div>
+	<!-- Spinner -->
+	<div class="form-group">
+	  <label>Slider:
+	    <input class="form-control" type="range" min="1" max="16" step="1" name="Slider">
+	  </label>
+	</div>
+      </fieldset>
+      <!-- Fieldset 2 -->
+      <fieldset disabled>
+	<legend>D and D Game:
+	</legend>
+	<div class="form-group">
+	  <label>D and D Dice:
+	    <input class="form-control" type="number" value="6" min="1" max="12" step="1" name="dice">
+	  </label>
+	</div>
+      </fieldset>
+      <input type="submit">
+    </form>
+  </data>
+</html>
