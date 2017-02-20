@@ -6,6 +6,7 @@
 
 # Add uniloc to path, pythonpath and manpath
 export PATH="~/uniloc/bin:~/local/bin:~/bin:$PATH"
+export PATH="$PATH:$HOME/npm/bin"
 ## Add dirs in /opt (p)
 
 # Python path configuration
