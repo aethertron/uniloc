@@ -2,6 +2,9 @@
 *.pyc
 
 # Emacs
+## Backups
+*~
+## Saved and Lock files
 \#*#
 .#*
 
