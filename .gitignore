@@ -1,6 +1,10 @@
 # Python Build Products
 *.pyc
 
+# Emacs
+\#*#
+.#*
+
 # Emacs Local
 config/emacs.d/site-lisp/org-agenda-files
 config/emacs.d/elpa/
@@ -11,6 +15,7 @@ config/emacs.d/ido.last
 config/emacs.d/bookmarks
 config/emacs.d/image-dired/
 config/emacs.d/ede-projects.el
+config/emacs.d/session*
 
 ## Optional
 config/emacs.d/site-lisp/local.el
@@ -27,7 +32,7 @@ bin/markdown-it
 bin/node
 bin/npm
 ### Likely to be removed
-bin/geeknote 
+bin/geeknote
 
 ## Includes
 include/
