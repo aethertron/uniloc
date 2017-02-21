@@ -234,6 +234,7 @@
 
 ;; ** shell begin
 (defun wgs85/shell-mode-hook ()
+  "Config for shell mode!"
   (orgtbl-mode))
 (add-hook 'shell-mode-hook 'wgs85/shell-mode-hook)
 
@@ -265,6 +266,8 @@
 		 (add-to-list 'company-backends 'company-web-jade)
 		 (add-to-list 'company-backends 'company-web-slim)
 		 "t"))
+(use-package ac-html-bootstrap :ensure t)
+(company-web-bootstrap+)
 
 
 
