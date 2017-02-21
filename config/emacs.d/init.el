@@ -262,13 +262,24 @@
 
 ;; ** web-mode
 (use-package web-mode :ensure t
-  :config (progn (add-to-list 'company-backends 'company-web-html)
-		 (add-to-list 'company-backends 'company-web-jade)
-		 (add-to-list 'company-backends 'company-web-slim)
-		 "t"))
-(use-package ac-html-bootstrap :ensure t)
-(company-web-bootstrap+)
+  :init (progn (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+	       (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+	       (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+	       (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+	       (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+	       (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+	       (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+	       (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+	       "t"))
 
+(use-package company-web :ensure t
+  :init (progn (add-to-list 'company-backends 'company-web-html)
+	       (add-to-list 'company-backends 'company-web-jade)
+	       (add-to-list 'company-backends 'company-web-slim)
+	       "t"))
+
+(use-package ac-html-bootstrap :ensure t
+  :init (add-hook 'web-mode-hook 'company-web-bootstrap+))
 
 
 ;;  * execute local elisp
