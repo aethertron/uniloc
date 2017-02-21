@@ -259,6 +259,13 @@
 (use-package markdown-preview-eww :ensure t)
 (use-package markdown-preview-mode :ensure t)
 
+;; ** web-mode
+(use-package web-mode :ensure t
+  :config (progn (add-to-list 'company-backends 'company-web-html)
+		 (add-to-list 'company-backends 'company-web-jade)
+		 (add-to-list 'company-backends 'company-web-slim)
+		 "t"))
+
 
 
 ;;  * execute local elisp
