@@ -137,4 +137,23 @@
       (error "Could not find the project root. Create a git, hg, or svn repository there first. "))
     (helm-silver rootdir)))
 
+
+;;;###autoload
+(defun helm-silver-cwd ()
+  (interactive)
+  (let ((rootdir (file-name-directory (buffer-file-name))))
+    (unless rootdir
+      (error "Could not find the project root. Create a git, hg, or svn repository there first. "))
+    (helm-silver rootdir)))
+
+
+;;;###autoload
+(defun helm-silver-home ()
+  (interactive)
+  (let ((rootdir (getenv "HOME")))
+    (unless rootdir
+      (error "Could not find the project root. Create a git, hg, or svn repository there first. "))
+    (helm-silver rootdir)))
+
+
 (provide 'nispio/helm-silver)
