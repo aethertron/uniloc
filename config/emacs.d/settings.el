@@ -27,6 +27,7 @@
    (quote
     (helm-source-buffers-list helm-source-bookmarks helm-source-recentf helm-source-buffer-not-found)))
  '(helm-split-window-default-side (quote right))
+ '(ido-auto-merge-work-directories-length -1)
  '(ido-use-virtual-buffers (quote auto))
  '(magit-log-arguments
    (quote
