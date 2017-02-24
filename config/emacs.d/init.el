@@ -103,7 +103,8 @@
 (global-set-key (kbd "M-s o") 'helm-occur) ;; remap occur to helm-occur
 (global-set-key (kbd "C-h a") 'helm-apropos) ;; remap apropos to helm-apropos
 (global-set-key (kbd "M-X") 'helm-M-x)
-(global-set-key (kbd "C-x C-b") 'helm-buffers-list)
+(global-set-key (kbd "C-x C-b") 'helm-mini) ; buffer-list -> helm-mini, list with narrowing
+(global-set-key (kbd "C-x r b") 'helm-bookmarks)
 (global-set-key (kbd "C-x c i") 'helm-semantic-or-imenu)
 (global-set-key (kbd "C-h p") 'helm-list-elisp-packages)
 ;; ** helm swoop
@@ -164,6 +165,10 @@
 (nispio/setup-helm-apropos)
 (global-set-key (kbd "C-h A") 'nispio/helm-customize-group)
 (global-set-key (kbd "C-h M-a") 'nispio/helm-customize-option)
+(global-set-key (kbd "M-s p") 'helm-silver-project-root) ; "project"
+(global-set-key (kbd "M-s l") 'helm-silver-cwd) ; "location"
+(global-set-key (kbd "M-s u") 'helm-silver-home) ; "user"
+
 ;; * nispio section end
 
 (use-package ws-butler :ensure t)
