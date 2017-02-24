@@ -23,6 +23,9 @@
  '(helm-boring-buffer-regexp-list
    (quote
     ("\\` " "\\*helm" "\\*helm-mode" "\\*Echo Area" "\\*Minibuf" "\\*.*\\*")))
+ '(helm-mini-default-sources
+   (quote
+    (helm-source-buffers-list helm-source-bookmarks helm-source-recentf helm-source-buffer-not-found)))
  '(helm-split-window-default-side (quote right))
  '(ido-use-virtual-buffers (quote auto))
  '(magit-log-arguments
@@ -121,6 +124,7 @@
  '(org-goto-max-level 5)
  '(org-habit-following-days 2)
  '(org-habit-show-all-today nil)
+ '(org-habit-show-habits-only-for-today nil)
  '(org-icalendar-alarm-time 30)
  '(org-icalendar-combined-agenda-file "~/Dropbox/todo/agenda.ics")
  '(org-icalendar-include-todo t)
