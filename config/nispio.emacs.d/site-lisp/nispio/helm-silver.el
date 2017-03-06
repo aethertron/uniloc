@@ -141,7 +141,7 @@
 ;;;###autoload
 (defun helm-silver-cwd ()
   (interactive)
-  (let ((rootdir (file-name-directory (buffer-file-name))))
+  (let ((rootdir (helm-current-directory)))
     (unless rootdir
       (error "Could not find the project root. Create a git, hg, or svn repository there first. "))
     (helm-silver rootdir)))
