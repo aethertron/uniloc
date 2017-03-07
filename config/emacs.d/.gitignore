@@ -2,6 +2,7 @@
 .org-id-locations
 eshell/*
 url/*
+/tramp
 
 recentf
 org-agenda-files 
