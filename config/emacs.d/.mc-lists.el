@@ -5,6 +5,9 @@
       '(
 	backward-sexp
 	beginning-of-buffer
+	c-electric-delete-forward
+	c-electric-paren
+	dabbrev-expand
 	electric-newline-and-maybe-indent
 	end-of-visual-line
 	forward-sexp
@@ -13,7 +16,6 @@
 	kafkalib/org-insert-current-time-stamp
 	kill-region
 	mark-sexp
-	markdown-exdent-or-delete
 	org-agenda-do-date-later
 	org-backward-sentence
 	org-beginning-of-line
@@ -40,6 +42,7 @@
 	org-shiftmetaright
 	org-shiftup
 	org-yank
+	orgtbl-hijacker-command-100
 	orgtbl-self-insert-command
 	sgml-tag
 	smex
