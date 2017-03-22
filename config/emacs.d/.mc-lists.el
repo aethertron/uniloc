@@ -13,6 +13,7 @@
 	kafkalib/org-insert-current-time-stamp
 	kill-region
 	mark-sexp
+	markdown-exdent-or-delete
 	org-agenda-do-date-later
 	org-backward-sentence
 	org-beginning-of-line

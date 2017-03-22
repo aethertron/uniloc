@@ -20,6 +20,7 @@
  '(display-time-day-and-date t)
  '(flycheck-display-errors-delay 0.2)
  '(flycheck-pos-tip-mode t)
+ '(helm-ag-base-command "ag --nocolor --nogroup --smart-case")
  '(helm-boring-buffer-regexp-list
    (quote
     ("\\` " "\\*helm" "\\*helm-mode" "\\*Echo Area" "\\*Minibuf" "\\*.*\\*")))
