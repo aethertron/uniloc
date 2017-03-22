@@ -1,0 +1,3 @@
+#!/bin/bash
+
+zenity --entry --title=Password --text="Enter your password:" --hide-text
