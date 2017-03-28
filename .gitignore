@@ -43,5 +43,9 @@ include/
 ## Libs
 lib/
 
+## Share Stuff
+/share/man
+/share/systemtap
+
 ## Untarred Source (only tarballs committed to repo)
 src/node-v0.12.5/
