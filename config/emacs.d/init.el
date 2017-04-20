@@ -38,9 +38,10 @@
 (require 'package)
 (setq package-archives '())
 
-(when (not (load "local-package-archives.el" t))
-  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
-  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/")))
+;; add package archives
+(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 
 ;; initialize packages and grab use-package
 (package-initialize)  ;; add elpa to the load path?
@@ -98,33 +99,39 @@
 	      ("C-n" . company-select-next-or-abort)))
 (global-company-mode)
 
-;; * helm modes begin
-(use-package helm :ensure t)
-(global-set-key (kbd "M-s o") 'helm-occur) ;; remap occur to helm-occur
-(global-set-key (kbd "C-h a") 'helm-apropos) ;; remap apropos to helm-apropos
-(global-set-key (kbd "M-X") 'helm-M-x)
-(global-set-key (kbd "C-x C-b") 'helm-mini) ; buffer-list -> helm-mini, list with narrowing
-(global-set-key (kbd "C-x r b") 'helm-bookmarks)
-(global-set-key (kbd "C-x c i") 'helm-semantic-or-imenu)
-(global-set-key (kbd "C-h p") 'helm-list-elisp-packages)
-;; ** helm swoop
-(use-package helm-swoop :ensure t)
-(global-set-key (kbd "M-s i") 'helm-swoop)
-(global-set-key (kbd "M-s I") 'helm-swoop-back-to-last-point)
-(global-set-key (kbd "M-s M-i i") 'helm-multi-swoop)
-(global-set-key (kbd "M-s M-i I") 'helm-multi-swoop-all)
-(global-set-key (kbd "M-s M-i o") 'helm-multi-swoop-org)
+;; * ivy begin
+(use-package ivy :ensure t
+  :config (ivy-mode)
+  :bind
+  ("C-x C-b" . ivy-switch-buffer)
+  )
 
-;; ** helm desc key
-(use-package helm-descbinds :ensure t)
-(helm-descbinds-mode t)
-;; ** helm-ag
-(use-package helm-ag :ensure t)
-;; ** helm-company
-(use-package helm-company :ensure t
-  :bind (:map company-mode-map ("C-M-S-i" . helm-company)
-	 :map company-active-map ("C-M-S-i" . helm-company)))
-;; * helm end
+
+
+(use-package counsel :ensure t
+  :bind
+  ("M-x" . counsel-M-x)
+  ("C-x C-f" . counsel-find-file)
+  ;; help commands
+  ("C-h f" . counsel-describe-function)
+  ("C-h v" . counsel-describe-variable)
+  ("C-h b" . counsel-descbinds)
+  ("M-s l" . counsel-ag)
+  )
+
+
+;; projectile
+(use-package projectile :ensure t
+  :config (projectile-global-mode))
+
+;; helm
+;;(require 'noosphere/helm-config)
+
+
+;; local packages
+(use-package elpakit :ensure t)
+;; (require 'nispio/package-config)
+
 
 ;; - avy -
 (use-package avy :ensure t)
@@ -157,19 +164,6 @@
 (use-package which-key :ensure t)
 (which-key-mode 1)
 
-;; * nispio section begin
-(require 'nispio/helm-silver)
-(require 'nispio/helm-extra)
-(require 'nispio/mc-extra)
-(nispio/mc-setup-mark-lines)
-(nispio/setup-helm-apropos)
-(global-set-key (kbd "C-h A") 'nispio/helm-customize-group)
-(global-set-key (kbd "C-h M-a") 'nispio/helm-customize-option)
-(global-set-key (kbd "M-s p") 'helm-silver-project-root) ; "project"
-(global-set-key (kbd "M-s l") 'helm-silver-cwd) ; "location"
-(global-set-key (kbd "M-s u") 'helm-silver-home) ; "user"
-
-;; * nispio section end
 
 (use-package ws-butler :ensure t)
 (ws-butler-global-mode)
@@ -284,9 +278,6 @@
   ;; - spotify
   (use-package spotify :ensure t)
   (spotify-enable-song-notifications)
-
-  ;; - helm-spotify
-  (use-package helm-spotify :ensure t)
 
   ;; * magit
   (use-package magit :ensure t)
