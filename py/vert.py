@@ -8,8 +8,8 @@ import sys
 
 def main(args):
     parser = argparse.ArgumentParser(parents=[uniloc_utils.argparse_filter_parser()])
+    parser.add_argument("-s")
     args = parser.parse_args(args)
-    args.add_argugment("-s")
     vals = args.fin.read()
     if ',' in vals:
         sep = ','
