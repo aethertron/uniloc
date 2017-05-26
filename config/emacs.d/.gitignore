@@ -5,4 +5,7 @@ url/*
 /tramp
 
 recentf
-org-agenda-files 
+org-agenda-files
+
+/irony
+/projectile-bookmarks.eld
