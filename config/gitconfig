@@ -9,6 +9,6 @@
 	ci = commit
 	st = status
 [core]
-	editor = emacs
+	editor = emacsclient
 [push]
 	default = simple
