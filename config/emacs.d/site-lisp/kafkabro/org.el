@@ -66,6 +66,7 @@ doesn't appear to be working"
   ;;
   (auto-fill-mode)
   (org-indent-mode)
+  (flycheck-mode -1)
   ;; 
   (local-unset-key (kbd "<C-tab>"))
   ;;
