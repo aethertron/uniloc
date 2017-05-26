@@ -8,6 +8,11 @@
  ;; If there is more than one, they won't work right.
  '(buffer-move-behavior (quote move))
  '(comint-prompt-read-only nil)
+ '(company-backends
+   (quote
+    (company-web-slim company-web-jade company-web-html company-bbdb company-nxml company-css company-eclim company-irony company-semantic company-clang company-xcode company-cmake company-capf company-files
+		      (company-dabbrev-code company-gtags company-etags company-keywords)
+		      company-oddmuse company-dabbrev)))
  '(company-idle-delay 0.3)
  '(company-minimum-prefix-length 2)
  '(default-frame-alist (quote ((font . "DejaVu Sans Mono-10.5"))))
@@ -151,7 +156,7 @@
  '(org-treat-insert-todo-heading-as-state-change t)
  '(package-selected-packages
    (quote
-    (move-text latex-extra latex-math-preview latex-pretty-symbols latex-preview-pane latex-unicode-math-mode auctex markdown-mode markdown-mode+ markdown-preview-eww markdown-preview-mode helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
+    (elpakit flycheck-rtags rtags projectile ac-html-bootstrap company-web web-mode counsel htmlize company-irony irony irony-eldoc move-text latex-extra latex-pretty-symbols latex-preview-pane latex-unicode-math-mode auctex markdown-mode markdown-mode+ markdown-preview-eww markdown-preview-mode helm-company minesweeper flycheck-pos-tip flycheck-tip eclim company-mode anaconda-mode elpy ws-butler page-break-lines avy helm json-mode flycheck dired+ undo-tree zygospore which-key use-package spotify smex multiple-cursors monky magit helm-swoop helm-descbinds helm-ag gnuplot-mode gnuplot geeknote dumb-jump discover-my-major discover buffer-move ace-link)))
  '(revert-without-query (quote (".*")))
  '(tool-bar-mode nil))
 (custom-set-faces
